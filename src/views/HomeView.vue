@@ -4,13 +4,12 @@ import About from '../components/home/About.vue'
 import Offers from '../components/home/Offers.vue'
 import Clients from '../components/home/Clients.vue'
 import Contact from '../components/home/Contact.vue'
-import * as IndexJs from '../assets/js/index.js'
 </script>
 
 <template>
-  <Cover />
-  <About />
-  <Offers />
-  <Clients />
-  <Contact />
+  <Cover ref="cover"/>
+  <About ref="about"/>
+  <Offers ref="offers"/>
+  <Clients ref="clients"/>
+  <Contact ref="contact"/>
 </template>

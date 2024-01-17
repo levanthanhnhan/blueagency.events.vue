@@ -1,85 +1,82 @@
 <template>
-    <section id="offer" class="section-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 align-center">
-                    <h2 class="section-title">OFFERS</h2>
-                    <div class="title-separetor"></div>
-                </div>
+  <section id="offer" class="bg-white pb-8 text-gray-900">
+    <div class="container mx-auto flex flex-wrap pt-4 pb-10">
+      <h2
+        class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase"
+      >
+        Offers
+      </h2>
+      <div class="w-full">
+        <div
+          class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+        ></div>
+      </div>
+      <div
+        class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+        v-for="offer in offers"
+        v-bind:key="offer.title"
+      >
+        <div class="offer-card-shadow rounded-xl overflow-hidden">
+          <!-- Image -->
+          <div class="flex-0 shadow-md">
+            <img :src="offer.src" :alt=offer.title />
+          </div>
+          <!-- card body -->
+          <div class="flex-1 mt-auto p-6">
+            <div class="flex flex-col flex-grow flex-shrink justify-start">
+              <h6 class="flex-none mb-2">
+                <a href="../offers/adversiting" class="font-bold text-xl">{{
+                  offer.title
+                }}</a>
+              </h6>
+              <small class="flex-1 text-sm">{{ offer.description }}</small>
             </div>
-            <div class="row g-4 g-xl-8" style="margin-top: 50px;">
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card card-hover-shadow card-border">
-                        <!-- Image -->
-                        <img src="https://booking.webestica.com/landing/assets/images/demos/05.jpg" class="card-img-top" alt="" />
-                        <!-- card body -->
-                        <div class="card-body border-top">
-                            <h6 style="margin-bottom: 5px;"><a href="../offers/adversiting" class="stretched-link offer-header">Adversiting</a></h6>
-                            <small>Best for hotel, listing and directory website</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card card-hover-shadow card-border">
-                        <!-- Image -->
-                        <img src="https://booking.webestica.com/landing/assets/images/demos/05.jpg" class="card-img-top" alt="" />
-                        <!-- card body -->
-                        <div class="card-body border-top">
-                            <h6 style="margin-bottom: 5px;"><a href="../offers/adversiting" class="stretched-link offer-header">Adversiting</a></h6>
-                            <small>Best for hotel, listing and directory website</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card card-hover-shadow card-border">
-                        <!-- Image -->
-                        <img src="https://booking.webestica.com/landing/assets/images/demos/05.jpg" class="card-img-top" alt="" />
-                        <!-- card body -->
-                        <div class="card-body border-top">
-                            <h6 style="margin-bottom: 5px;"><a href="../offers/adversiting" class="stretched-link offer-header">Adversiting</a></h6>
-                            <small>Best for hotel, listing and directory website</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card card-hover-shadow card-border">
-                        <!-- Image -->
-                        <img src="https://booking.webestica.com/landing/assets/images/demos/05.jpg" class="card-img-top" alt="" />
-                        <!-- card body -->
-                        <div class="card-body border-top">
-                            <h6 style="margin-bottom: 5px;"><a href="../offers/adversiting" class="stretched-link offer-header">Adversiting</a></h6>
-                            <small>Best for hotel, listing and directory website</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card card-hover-shadow card-border">
-                        <!-- Image -->
-                        <img src="https://booking.webestica.com/landing/assets/images/demos/05.jpg" class="card-img-top" alt="" />
-                        <!-- card body -->
-                        <div class="card-body border-top">
-                            <h6 style="margin-bottom: 5px;"><a href="../offers/adversiting" class="stretched-link offer-header">Adversiting</a></h6>
-                            <small>Best for hotel, listing and directory website</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xxl-4">
-                    <div class="card card-hover-shadow card-border">
-                        <!-- Image -->
-                        <img src="https://booking.webestica.com/landing/assets/images/demos/05.jpg" class="card-img-top" alt="" />
-                        <!-- card body -->
-                        <div class="card-body border-top">
-                            <h6 style="margin-bottom: 5px;"><a href="../offers/adversiting" class="stretched-link offer-header">Adversiting</a></h6>
-                            <small>Best for hotel, listing and directory website</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      offers: [
+        {
+          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
+          title: "Adversiting",
+          description: "Best for hotel, listing and directory website",
+        },
+        {
+          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
+          title: "Entertainment",
+          description: "Best for hotel, listing and directory website",
+        },
+        {
+          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
+          title: "Activation",
+          description: "Best for hotel, listing and directory website",
+        },
+        {
+          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
+          title: "Media",
+          description: "Best for hotel, listing and directory website",
+        },
+        {
+          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
+          title: "Opening",
+          description: "Best for hotel, listing and directory website",
+        },
+        {
+          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
+          title: "Road Show",
+          description: "Best for hotel, listing and directory website",
+        },
+      ],
+    };
+  },
+  methods: {},
+  mounted() {},
+};
+</script>
