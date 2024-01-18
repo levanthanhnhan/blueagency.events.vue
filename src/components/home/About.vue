@@ -1,14 +1,16 @@
 <script>
-import ScrollReveal from 'scrollreveal'
+import ScrollReveal from 'scrollreveal';
 export default {
   mounted() {
     ScrollReveal({
-        reset: true,
+        reset: false,
         distance: '100px',
-        duration: 2500,
+        duration: 1500,
+        delay: 100
     });
-    ScrollReveal().reveal('.about', { delay: 200, origin: 'left' });
-    ScrollReveal().reveal('.about-description', { delay: 200, origin: 'right' });
+    ScrollReveal().reveal('.about', { origin: 'left' });
+    ScrollReveal().reveal('.about-description', { origin: 'right' });
+    ScrollReveal().reveal('.about-video', { origin: 'bottom' });
   },
 };
 </script>
@@ -32,7 +34,7 @@ export default {
         to Blue team.
       </p>
       <iframe
-        class="w-full aspect-video px-6"
+        class="w-full aspect-video px-6 about-video"
         height="500"
         src="https://www.youtube.com/embed/vlq_mMjr0Og"
         title="YouTube video player"
