@@ -1,5 +1,5 @@
 <template>
-  <nav id="header" class="fixed w-full z-30 top-0 text-white">
+  <nav id="header" class="fixed w-full z-30 top-0 text-white nav">
     <div
       class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
     >
@@ -87,7 +87,10 @@
     </div>
   </nav>
 </template>
+
 <script>
+import ScrollReveal from 'scrollreveal';
+
 export default {
   methods: {
     scrollNavBar() {
@@ -107,6 +110,12 @@ export default {
     },
   },
   mounted() {
+    ScrollReveal({
+        reset: true,
+        distance: '20px',
+        duration: 1000,
+    });
+    ScrollReveal().reveal('.nav', { delay: 200, origin: 'top' });
     this.scrollNavBar();
   },
 };

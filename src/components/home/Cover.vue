@@ -11,13 +11,15 @@
     <div
       class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center justify-center"
     >
-      <div id="sologanChanel" class="sm:text-4xl md:text-7xl lg:text-7xl">
+      <div id="sologanChanel" class="sm:text-4xl md:text-7xl lg:text-7xl cover-description">
         ONE TEAM - ONE DREAM
       </div>
     </div>
   </section>
 </template>
 <script>
+import ScrollReveal from 'scrollreveal';
+
 export default {
   methods: {
     channelSplit(el) {
@@ -41,7 +43,13 @@ export default {
     }
   },
   mounted() {
-    this.channelSplit(document.getElementById("sologanChanel"))
+    ScrollReveal({
+        reset: true,
+        distance: '100px',
+        duration: 2500,
+    });
+    ScrollReveal().reveal('.cover-description', { delay: 300, origin: 'right' });
+    this.channelSplit(document.getElementById("sologanChanel"));
   }
 }
 </script>
