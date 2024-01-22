@@ -2,7 +2,7 @@
   <section id="client" class="bg-white pb-8 text-gray-900">
     <div class="container mx-auto flex flex-wrap pt-4 pb-10">
       <h2
-        class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase"
+        class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase clients"
       >
         Clients
       </h2>
@@ -13,7 +13,7 @@
       </div>
       <div class="w-full mt-12 grid sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-4">
         <div
-          class="p-4 grayscale transition duration-200 hover:grayscale-0"
+          class="p-4 grayscale transition duration-200 hover:grayscale-0 clients-item"
           v-for="client in clients"
           v-bind:key="client.alt"
         >
@@ -29,6 +29,8 @@
 </template>
 
 <script>
+import ScrollReveal from 'scrollreveal';
+
 export default {
   data() {
     return {
@@ -85,6 +87,9 @@ export default {
     };
   },
   methods: {},
-  mounted() {},
+  mounted() {
+    ScrollReveal().reveal('.clients', { origin: 'left' });
+    ScrollReveal().reveal('.clients-item', { origin: 'right', interval: 100 });
+  },
 };
 </script>

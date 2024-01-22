@@ -43,11 +43,6 @@ export default {
     }
   },
   mounted() {
-    ScrollReveal({
-        reset: true,
-        distance: '100px',
-        duration: 2500,
-    });
     ScrollReveal().reveal('.cover-description', { delay: 300, origin: 'right' });
     this.channelSplit(document.getElementById("sologanChanel"));
   }

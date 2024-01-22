@@ -80,14 +80,8 @@ export default {
   },
   methods: {},
   mounted() {
-    ScrollReveal({
-        reset: true,
-        distance: '100px',
-        duration: 1500,
-        delay: 100
-    });
-    ScrollReveal().reveal('.offers', { origin: 'left' });
-    ScrollReveal().reveal('.offers-cards', { origin: 'bottom', interval: 100 });
+    ScrollReveal().reveal('.offers', { origin: 'right' });
+    ScrollReveal().reveal('.offers-cards', { origin: 'left', interval: 100 });
   },
 };
 </script>

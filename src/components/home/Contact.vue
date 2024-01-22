@@ -2,7 +2,7 @@
   <section id="contact" class="bg-white pb-8 text-gray-900">
     <div class="container mx-auto flex flex-wrap pt-4 pb-10">
       <h2
-        class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase"
+        class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase contact"
       >
         Contact us
       </h2>
@@ -11,7 +11,7 @@
           class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
         ></div>
       </div>
-      <p class="py-4 text-xl max-w-3xl mx-auto text-gray-500 text-center">
+      <p class="py-4 text-xl max-w-3xl mx-auto text-gray-500 text-center contact-description">
         We are always welcoming talents to join our departments. If you are
         interested in joining us, please send us an email
       </p>
@@ -19,7 +19,7 @@
         <form @submit.prevent="submitFeedback">
           <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-6">
             <div class="sm:col-span-3">
-              <div class="mt-2">
+              <div class="contact-form-col-left mt-2">
                 <input
                   v-model="feedback.name"
                   placeholder="Name (required)"
@@ -30,7 +30,7 @@
                   class="block w-full rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 />
               </div>
-              <div class="mt-2">
+              <div class="contact-form-col-left mt-2">
                 <input
                   v-model="feedback.email"
                   placeholder="Email (required)"
@@ -41,7 +41,7 @@
                   class="block w-full rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 />
               </div>
-              <div class="mt-2">
+              <div class="contact-form-col-left mt-2">
                 <input
                   v-model="feedback.subject"
                   placeholder="Subject"
@@ -53,7 +53,7 @@
               </div>
             </div>
             <div class="sm:col-span-3">
-              <div class="mt-2">
+              <div class="contact-form-col-right mt-2">
                 <textarea
                   v-model="feedback.message"
                   id="txtMailBody"
@@ -65,7 +65,7 @@
                   class="block w-full rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 ></textarea>
               </div>
-              <div class="mt-2">
+              <div class="contact-form-col-right mt-2">
                 <input
                   type="submit"
                   class="block w-full rounded-md border-0 px-2 py-2 bg-primary hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-white"
@@ -100,6 +100,7 @@
 </template>
 <script>
 import contactService from "../../services/contact.service";
+import ScrollReveal from 'scrollreveal';
 
 export default {
   data() {
@@ -127,6 +128,7 @@ export default {
         })
         .catch((error) => {
           console.log(error);
+          this.sendMailFailed();
         });
     },
     setDefaultFeedback() {
@@ -151,6 +153,11 @@ export default {
   mounted() {
     this.isSuccess = false;
     this.isError = false;
+
+    ScrollReveal().reveal('.contact', { origin: 'top' });
+    ScrollReveal().reveal('.contact-description', { origin: 'bottom' });
+    ScrollReveal().reveal('.contact-form-col-left', { origin: 'left', interval: 200 });
+    ScrollReveal().reveal('.contact-form-col-right', { origin: 'right', interval: 200 });
   },
 };
 </script>

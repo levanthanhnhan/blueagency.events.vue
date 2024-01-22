@@ -2,15 +2,9 @@
 import ScrollReveal from 'scrollreveal';
 export default {
   mounted() {
-    ScrollReveal({
-        reset: false,
-        distance: '100px',
-        duration: 1500,
-        delay: 100
-    });
-    ScrollReveal().reveal('.about', { origin: 'left' });
-    ScrollReveal().reveal('.about-description', { origin: 'right' });
-    ScrollReveal().reveal('.about-video', { origin: 'bottom' });
+    ScrollReveal().reveal('.about', { origin: 'left' })
+    ScrollReveal().reveal('.about-description', { origin: 'right' })
+    ScrollReveal().reveal('.about-video', { origin: 'bottom' })
   },
 };
 </script>

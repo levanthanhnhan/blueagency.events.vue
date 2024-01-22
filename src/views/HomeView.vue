@@ -13,16 +13,3 @@ import Contact from '../components/home/Contact.vue'
   <Clients ref="clients"/>
   <Contact ref="contact"/>
 </template>
-
-<script>
-import ScrollReveal from 'scrollreveal'
-export default {
-  mounted() {
-    ScrollReveal({
-        reset: true,
-        distance: '100px',
-        duration: 2500,
-    });
-  },
-};
-</script>

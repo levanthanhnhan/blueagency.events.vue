@@ -1,3 +1,7 @@
+<script setup>
+import LanguageButton from './LanguageButton.vue';
+</script>
+
 <template>
   <nav id="header" class="fixed w-full z-30 top-0 text-white nav">
     <div
@@ -31,7 +35,7 @@
         id="nav-content"
       >
         <ul
-          class="list-reset lg:flex justify-end flex-1 items-center uppercase"
+          class="text-lg lg:flex justify-end flex-1 items-center uppercase"
         >
           <li class="mr-3">
             <p
@@ -82,6 +86,7 @@
               Contact
             </p>
           </li>
+          <LanguageButton></LanguageButton>
         </ul>
       </div>
     </div>
@@ -110,11 +115,6 @@ export default {
     },
   },
   mounted() {
-    ScrollReveal({
-        reset: true,
-        distance: '20px',
-        duration: 1000,
-    });
     ScrollReveal().reveal('.nav', { delay: 200, origin: 'top' });
     this.scrollNavBar();
   },
