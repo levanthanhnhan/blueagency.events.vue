@@ -1,28 +1,28 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import OffersView from '../views/OffersView.vue'
-import Offers from '../components/offers/Offers.vue'
-import Adversiting from '../components/offers/Adversiting.vue'
-import Media from '../components/offers/Media.vue'
-import Activation from '../components/offers/Activation.vue'
-import Entertainment from '../components/offers/Entertainment.vue'
-import RoadShow from '../components/offers/RoadShow.vue'
-import Opening from '../components/offers/Opening.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "../views/HomeView.vue";
+import SericeView from "../views/SericeView.vue";
+import Service from "../components/home/Service.vue";
+import Adversiting from "../components/service/Adversiting.vue";
+import Media from "../components/service/Media.vue";
+import Activation from "../components/service/Activation.vue";
+import Entertainment from "../components/service/Entertainment.vue";
+import RoadShow from "../components/service/RoadShow.vue";
+import Opening from "../components/service/Opening.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: "/",
       component: HomeView,
     },
     {
-      path: '/offers',
-      component: OffersView,
+      path: "/service",
+      component: SericeView,
       children: [
         {
           path: "",
-          component: Offers,
+          component: Service,
         },
         {
           path: "adversiting",
@@ -48,9 +48,9 @@ const router = createRouter({
           path: "opening",
           component: Opening,
         },
-      ]
-    }
-  ]
-})
+      ],
+    },
+  ],
+});
 
-export default router
+export default router;

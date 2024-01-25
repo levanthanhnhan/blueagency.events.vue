@@ -4,14 +4,16 @@
       <h2
         class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase clients"
       >
-        Clients
+        {{ t("client.header") }}
       </h2>
       <div class="w-full">
         <div
           class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
         ></div>
       </div>
-      <div class="w-full mt-12 grid sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-4">
+      <div
+        class="w-full mt-12 grid sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-4"
+      >
         <div
           class="p-4 grayscale transition duration-200 hover:grayscale-0 clients-item"
           v-for="client in clients"
@@ -29,9 +31,14 @@
 </template>
 
 <script>
-import ScrollReveal from 'scrollreveal';
+import ScrollReveal from "scrollreveal";
+import { useI18n } from "vue-i18n";
 
 export default {
+  setup() {
+    const { t } = useI18n();
+    return { t };
+  },
   data() {
     return {
       clients: [
@@ -88,8 +95,8 @@ export default {
   },
   methods: {},
   mounted() {
-    ScrollReveal().reveal('.clients', { origin: 'left' });
-    ScrollReveal().reveal('.clients-item', { origin: 'right', interval: 100 });
+    ScrollReveal().reveal(".clients", { origin: "left" });
+    ScrollReveal().reveal(".clients-item", { origin: "right", interval: 100 });
   },
 };
 </script>

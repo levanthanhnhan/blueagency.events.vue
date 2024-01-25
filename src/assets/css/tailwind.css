@@ -3,38 +3,42 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-      font-family: "Dosis", sans-serif;
+  html {
+    font-family: "Dosis", sans-serif;
+  }
+  .bg-blur {
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+  .gradient {
+    background: linear-gradient(90deg, #ff5f6d 0%, #ffc371 100%);
+  }
+  .gradient-animation {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
     }
-    .gradient {
-      background: linear-gradient(90deg, #FF5F6D 0%, #FFC371 100%);
+    50% {
+      background-position: 100% 50%;
     }
-    .gradient-animation {
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: gradient-animation 10s ease infinite;
-    }
-    @keyframes gradient-animation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    .offer-card-shadow {
-      -webkit-box-shadow: 0px 3px 20px rgba(29, 58, 83, 0.08);
-      box-shadow: 0px 3px 20px rgba(29, 58, 83, 0.08);
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-    }
-    .offer-card-shadow:hover {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
-      -webkit-box-shadow: 0px 10px 30px rgba(29, 58, 83, 0.15);
-      box-shadow: 0px 10px 30px rgba(29, 58, 83, 0.15)
+    100% {
+      background-position: 0% 50%;
     }
   }
+  .offer-card-shadow {
+    -webkit-box-shadow: 0px 3px 20px rgba(29, 58, 83, 0.08);
+    box-shadow: 0px 3px 20px rgba(29, 58, 83, 0.08);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .offer-card-shadow:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0px 10px 30px rgba(29, 58, 83, 0.15);
+    box-shadow: 0px 10px 30px rgba(29, 58, 83, 0.15);
+  }
+}

@@ -1,7 +1,3 @@
-<script setup>
-import ButtonScrollTop from "./ButtonScrollTop.vue";
-</script>
-
 <template>
   <footer
     class="relative z-10 bg-white pt-20 pb-10 lg:pb-20 gradient-animation"
@@ -22,32 +18,72 @@ import ButtonScrollTop from "./ButtonScrollTop.vue";
         <!-- Contact -->
         <div class="w-full px-4 md:w-1/3">
           <div class="w-full mb-10">
-            <h4 class="text-3xl font-semibold text-white mb-9">Contact</h4>
+            <h4 class="text-3xl font-semibold text-white mb-9">
+              {{ t("footer.contact.header") }}
+            </h4>
             <ul class="space-y-3">
               <li class="flex items-center">
-                <ion-icon
-                  class="w-5 h-5 rounded-[20px] border border-white p-2"
-                  name="location-sharp"
-                ></ion-icon>
-                <span class="text-lg font-light text-gray-200 ml-5"
-                  >3rd Floor, 29 Ha Noi, Phu Nhuan, Hue</span
+                <p
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </p>
+                <span
+                  class="text-lg font-light text-gray-200 leading-[1.5px]"
+                  >{{ t("footer.contact.address") }}</span
                 >
               </li>
               <li class="flex items-center text-sm font-medium">
-                <ion-icon
-                  class="w-5 h-5 rounded-[20px] border border-white p-2"
-                  name="call-sharp"
-                ></ion-icon>
-                <span class="text-lg font-light text-gray-200 ml-5"
+                <p
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </p>
+                <span class="text-lg font-light text-gray-200 leading-[1.5px]"
                   >+012 (345) 678 99</span
                 >
               </li>
               <li class="flex items-center text-sm font-medium">
-                <ion-icon
-                  class="w-5 h-5 rounded-[20px] border border-white p-2"
-                  name="mail-sharp"
-                ></ion-icon>
-                <span class="text-lg font-light text-gray-200 ml-5"
+                <p
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+                    />
+                    <path
+                      d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+                    />
+                  </svg>
+                </p>
+                <span class="text-lg font-light text-gray-200 leading-[1.5px]"
                   >group@blueagency.events</span
                 >
               </li>
@@ -57,11 +93,13 @@ import ButtonScrollTop from "./ButtonScrollTop.vue";
         <!-- Follow -->
         <div class="w-full px-4 md:w-1/3">
           <div class="w-full mb-10">
-            <h4 class="text-3xl font-semibold text-white mb-9">Follow Us On</h4>
+            <h4 class="text-3xl font-semibold text-white mb-9">
+              {{ t("footer.follow.header") }}
+            </h4>
             <div class="flex items-center mb-6">
               <a
                 href="javascript:void(0)"
-                class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg
                   width="8"
@@ -76,7 +114,7 @@ import ButtonScrollTop from "./ButtonScrollTop.vue";
               </a>
               <a
                 href="javascript:void(0)"
-                class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg
                   width="16"
@@ -100,7 +138,11 @@ import ButtonScrollTop from "./ButtonScrollTop.vue";
 
     <!-- Facebook Chat -->
     <div id="fb-root"></div>
-    <div class="fb-customerchat" attribution="setup_tool" page_id="560849977295975"></div>
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="560849977295975"
+    ></div>
 
     <!-- Button Scroll To Top -->
     <ButtonScrollTop />
@@ -108,20 +150,35 @@ import ButtonScrollTop from "./ButtonScrollTop.vue";
 </template>
 
 <script>
-	/* Register Fb Messenger */
-	window.fbAsyncInit = function () {
-		FB.init({
-			xfbml: true,
-			version: 'v10.0'
-		});
-	};
+import ButtonScrollTop from "./ButtonScrollTop.vue";
+import { useI18n } from "vue-i18n";
 
-	(function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s);
-		js.id = id;
-		js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
+export default {
+  setup() {
+    const { t } = useI18n();
+    return { t };
+  },
+  methods: {
+    registerFacebook() {
+      // /* Register Fb Messenger */
+      // window.fbAsyncInit = function () {
+      // 	FB.init({
+      // 		xfbml: true,
+      // 		version: 'v10.0'
+      // 	});
+      // };
+      // (function (d, s, id) {
+      // 	var js, fjs = d.getElementsByTagName(s)[0];
+      // 	if (d.getElementById(id)) return;
+      // 	js = d.createElement(s);
+      // 	js.id = id;
+      // 	js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      // 	fjs.parentNode.insertBefore(js, fjs);
+      // }(document, 'script', 'facebook-jssdk'));
+    },
+  },
+  mounted() {
+    this.registerFacebook();
+  },
+};
 </script>

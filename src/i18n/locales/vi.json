@@ -1,0 +1,45 @@
+{
+  "locale": {
+    "en": "English",
+    "vi": "Vietnamese"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "service": "Dịch vụ",
+    "client": "Khách hàng",
+    "contact": "Liên hệ"
+  },
+  "about": {
+    "header": "Giới thiệu",
+    "description": "Với tiêu chí nhiệt tình và luôn sáng tạo trong công việc. Hy vọng quý khách hàng sẽ có những trải nghiệm khác biệt và tuyệt vời khi đến với chúng tôi."
+  },
+  "service": {
+    "header": "Dịch vụ",
+    "description": ""
+  },
+  "client": {
+    "header": "Khách hàng",
+    "description": ""
+  },
+  "contact": {
+    "header": "Liên hệ",
+    "description": "Chúng tôi luôn chào đón những tài năng tham gia vào các bộ phận của chúng tôi. Nếu bạn muốn tham gia, vui lòng gửi email cho chúng tôi.",
+    "form": {
+      "name": "Họ tên (Không để trống)",
+      "email": "Email (Không để trống)",
+      "subject": "Tiêu đề",
+      "message": "Nội dung",
+      "submit": "Gửi"
+    }
+  },
+  "footer": {
+    "contact": {
+      "header": "Liên hệ",
+      "address": "Tầng 3, 29 Hà Nội, phường Phú Nhuận, Tp Huế"
+    },
+    "follow": {
+      "header": "Theo dõi chúng tôi"
+    }
+  }
+}

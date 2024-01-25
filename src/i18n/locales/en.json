@@ -1,0 +1,45 @@
+{
+  "locale": {
+    "en": "English",
+    "vi": "Vietnamese"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "service": "Service",
+    "client": "Client",
+    "contact": "Contact"
+  },
+  "about": {
+    "header": "About",
+    "description": "With the criteria of being enthusiastic and always creative at work. We hope our customers will have a different and wonderful experience coming to Blue team."
+  },
+  "service": {
+    "header": "Service",
+    "description": ""
+  },
+  "client": {
+    "header": "Client",
+    "description": ""
+  },
+  "contact": {
+    "header": "Contact",
+    "description": "We are always welcoming talents to join our departments. If you are interested in joining us, please send us an email.",
+    "form": {
+      "name": "Name (required)",
+      "email": "Email (required)",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  },
+  "footer": {
+    "contact": {
+      "header": "Contact",
+      "address": "3rd Floor, 29 Ha Noi, Phu Nhuan, Hue City"
+    },
+    "follow": {
+      "header": "Follow Us On"
+    }
+  }
+}
