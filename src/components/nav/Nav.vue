@@ -41,61 +41,26 @@ import LanguageButton from "./LanguageButton.vue";
         id="nav-content"
       >
         <ul class="text-lg lg:flex justify-end flex-1 items-center uppercase">
-          <li class="mr-3 nav-item">
+          <li
+            class="mr-3 nav-item"
+            v-for="navItem in navItems"
+            v-bind:key="navItem.id"
+          >
             <p
               v-scroll
-              name="home"
-              class="inline-block text-gray-100 no-underline hover:text-primary hover:scale-125 hover:font-semibold py-2 px-4 transition-all"
-              href="#"
-            >
-              {{ $t("nav.home") }}
-            </p>
-          </li>
-          <li class="mr-3 nav-item">
-            <p
-              v-scroll
-              name="about"
-              class="inline-block text-gray-100 no-underline hover:text-primary hover:scale-125 hover:font-semibold py-2 px-4 transition-all"
-              href="#"
-            >
-              {{ $t("nav.about") }}
-            </p>
-          </li>
-          <li class="mr-3 nav-item">
-            <p
-              v-scroll
-              name="service"
-              class="inline-block text-gray-100 no-underline hover:text-primary hover:scale-125 hover:font-semibold py-2 px-4 transition-all"
-              href="#"
-            >
-              {{ $t("nav.service") }}
-            </p>
-          </li>
-          <li class="mr-3 nav-item">
-            <p
-              v-scroll
-              name="client"
-              class="inline-block text-gray-100 no-underline hover:text-primary hover:scale-125 hover:font-semibold py-2 px-4 transition-all"
-              href="#"
-            >
-              {{ $t("nav.client") }}
-            </p>
-          </li>
-          <li class="mr-3 nav-item">
-            <p
-              v-scroll
-              name="contact"
+              @click="goTo(`${navItem.id}`)"
+              :name="navItem.id"
               class="inline-block text-gray-100 no-underline hover:text-primary hover:scale-125 hover:font-semibold py-2 px-4 transition-all"
             >
-              {{ $t("nav.contact") }}
+              {{ $t("nav." + `${navItem.id}`) }}
             </p>
-          </li>
-          <li class="mr-3 nav-item">
-            <div class="inline-block text-gray-100 no-underline py-2 px-4">
-              <LanguageButton></LanguageButton>
-            </div>
           </li>
         </ul>
+        <div class="mr-3 nav-item">
+          <div class="inline-block text-gray-100 no-underline py-2 px-4">
+            <LanguageButton></LanguageButton>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -103,24 +68,54 @@ import LanguageButton from "./LanguageButton.vue";
 
 <script>
 import ScrollReveal from "scrollreveal";
+import common from "@/utils/common";
 
 export default {
+  data() {
+    return {
+      navItems: [
+        {
+          id: "home",
+        },
+        {
+          id: "about",
+        },
+        {
+          id: "service",
+        },
+        {
+          id: "client",
+        },
+        {
+          id: "contact",
+        },
+      ],
+    };
+  },
   methods: {
+    goTo(id) {
+      this.$router.push("/");
+      const el = document.querySelector(`#${id}`);
+      if (el != undefined) {
+        let coord = el.getBoundingClientRect().top + window.scrollY - 70;
+        window.scroll({ top: coord, behavior: "smooth" });
+      }
+    },
     scrollNavBar() {
-      var scrollpos = window.scrollY;
       var header = document.getElementById("header");
       var navMenuDiv = document.getElementById("nav-content");
 
       document.addEventListener("scroll", function () {
         /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
+        var scrollpos = window.scrollY;
 
         if (scrollpos > 10) {
           header.classList.add("gradient-animation");
-        } else {
-          if (navMenuDiv.classList.contains("hidden")) {
-            header.classList.remove("gradient-animation");
-          }
+        } else if (
+          !common.isUrlHasSub() &&
+          navMenuDiv.classList.contains("hidden")
+        ) {
+          header.classList.remove("gradient-animation");
         }
       });
     },
@@ -149,14 +144,14 @@ export default {
             header.classList.add("gradient-animation");
           } else {
             navMenuDiv.classList.add("hidden");
-            if (window.scrollY < 10) {
+            if (!common.isUrlHasSub() && window.scrollY < 10) {
               header.classList.remove("gradient-animation");
             }
           }
         } else {
           // click both outside link and outside menu, hide menu
           navMenuDiv.classList.add("hidden");
-          if (window.scrollY < 10) {
+          if (!common.isUrlHasSub() && window.scrollY < 10) {
             header.classList.remove("gradient-animation");
           }
         }
@@ -164,8 +159,8 @@ export default {
     },
   },
   mounted() {
-    ScrollReveal().reveal(".nav-logo", { delay: 200, origin: "left" });
-    ScrollReveal().reveal(".nav-item", { origin: "top", interval: 100 });
+    // ScrollReveal().reveal(".nav-logo", { delay: 200, origin: "left" });
+    // ScrollReveal().reveal(".nav-item", { origin: "top", interval: 100 });
     this.scrollNavBar();
 
     document.onclick = this.toggleCheck;

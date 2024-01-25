@@ -4,7 +4,7 @@
       <h2
         class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase clients"
       >
-        {{ t("client.header") }}
+        {{ $t("client.header") }}
       </h2>
       <div class="w-full">
         <div
@@ -35,10 +35,6 @@ import ScrollReveal from "scrollreveal";
 import { useI18n } from "vue-i18n";
 
 export default {
-  setup() {
-    const { t } = useI18n();
-    return { t };
-  },
   data() {
     return {
       clients: [

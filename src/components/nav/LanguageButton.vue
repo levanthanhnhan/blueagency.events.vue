@@ -106,7 +106,7 @@ export default {
     },
   },
   mounted() {
-    ScrollReveal().reveal(".btn-language", { delay: 200, origin: "right" });
+    // ScrollReveal().reveal(".btn-language", { delay: 200, origin: "right" });
   },
 };
 </script>

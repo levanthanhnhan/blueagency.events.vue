@@ -19,7 +19,7 @@
         <div class="w-full px-4 md:w-1/3">
           <div class="w-full mb-10">
             <h4 class="text-3xl font-semibold text-white mb-9">
-              {{ t("footer.contact.header") }}
+              {{ $t("footer.contact.header") }}
             </h4>
             <ul class="space-y-3">
               <li class="flex items-center">
@@ -41,7 +41,7 @@
                 </p>
                 <span
                   class="text-lg font-light text-gray-200 leading-[1.5px]"
-                  >{{ t("footer.contact.address") }}</span
+                  >{{ $t("footer.contact.address") }}</span
                 >
               </li>
               <li class="flex items-center text-sm font-medium">
@@ -62,7 +62,7 @@
                   </svg>
                 </p>
                 <span class="text-lg font-light text-gray-200 leading-[1.5px]"
-                  >+012 (345) 678 99</span
+                  >+84 935 66 33 97</span
                 >
               </li>
               <li class="flex items-center text-sm font-medium">
@@ -94,7 +94,7 @@
         <div class="w-full px-4 md:w-1/3">
           <div class="w-full mb-10">
             <h4 class="text-3xl font-semibold text-white mb-9">
-              {{ t("footer.follow.header") }}
+              {{ $t("footer.follow.header") }}
             </h4>
             <div class="flex items-center mb-6">
               <a
@@ -154,31 +154,31 @@ import ButtonScrollTop from "./ButtonScrollTop.vue";
 import { useI18n } from "vue-i18n";
 
 export default {
-  setup() {
-    const { t } = useI18n();
-    return { t };
+  components: {
+    ButtonScrollTop,
   },
   methods: {
     registerFacebook() {
-      // /* Register Fb Messenger */
-      // window.fbAsyncInit = function () {
-      // 	FB.init({
-      // 		xfbml: true,
-      // 		version: 'v10.0'
-      // 	});
-      // };
-      // (function (d, s, id) {
-      // 	var js, fjs = d.getElementsByTagName(s)[0];
-      // 	if (d.getElementById(id)) return;
-      // 	js = d.createElement(s);
-      // 	js.id = id;
-      // 	js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-      // 	fjs.parentNode.insertBefore(js, fjs);
-      // }(document, 'script', 'facebook-jssdk'));
+      /* Register Fb Messenger */
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v10.0",
+        });
+      };
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
     },
   },
   mounted() {
-    this.registerFacebook();
+    //this.registerFacebook();
   },
 };
 </script>

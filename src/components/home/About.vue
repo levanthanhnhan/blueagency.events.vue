@@ -3,10 +3,6 @@ import ScrollReveal from "scrollreveal";
 import { useI18n } from "vue-i18n";
 
 export default {
-  setup() {
-    const { t } = useI18n();
-    return { t };
-  },
   mounted() {
     ScrollReveal().reveal(".about", { origin: "left" });
     ScrollReveal().reveal(".about-description", { origin: "right" });
@@ -21,7 +17,7 @@ export default {
       <h2
         class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase about"
       >
-        {{ t("about.header") }}
+        {{ $t("about.header") }}
       </h2>
       <div class="w-full">
         <div
@@ -31,10 +27,7 @@ export default {
       <p
         class="py-6 text-xl max-w-3xl mx-auto text-gray-500 text-center about-description"
       >
-        {{ t("about.description") }}
-        <!-- With the criteria of being enthusiastic and always creative at work. We
-        hope our customers will have a different and wonderful experience coming
-        to Blue team. -->
+        {{ $t("about.description") }}
       </p>
       <iframe
         class="w-full aspect-video px-6 about-video"

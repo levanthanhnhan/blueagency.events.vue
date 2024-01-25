@@ -53,4 +53,12 @@ const router = createRouter({
   ],
 });
 
+router.beforeEach(async (to, from) => {
+  // const isAuthenticated = await authService.isAuthenticated();
+  // if (!isAuthenticated && to.name !== "login") {
+  //   await authService.logout();
+  //   return { name: "login" };
+  // }
+});
+
 export default router;

@@ -29,13 +29,13 @@
       background-position: 0% 50%;
     }
   }
-  .offer-card-shadow {
+  .service-card-shadow {
     -webkit-box-shadow: 0px 3px 20px rgba(29, 58, 83, 0.08);
     box-shadow: 0px 3px 20px rgba(29, 58, 83, 0.08);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .offer-card-shadow:hover {
+  .service-card-shadow:hover {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
     -webkit-box-shadow: 0px 10px 30px rgba(29, 58, 83, 0.15);

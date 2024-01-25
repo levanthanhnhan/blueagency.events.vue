@@ -4,7 +4,7 @@
       <h2
         class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase contact"
       >
-        {{ t("contact.header") }}
+        {{ $t("contact.header") }}
       </h2>
       <div class="w-full">
         <div
@@ -14,7 +14,7 @@
       <p
         class="py-4 text-xl max-w-3xl mx-auto text-gray-500 text-center contact-description"
       >
-        {{ t("contact.description") }}
+        {{ $t("contact.description") }}
       </p>
       <div class="w-11/12 mx-auto">
         <form @submit.prevent="submitFeedback">
@@ -23,7 +23,7 @@
               <div class="contact-form-col-left mt-2">
                 <input
                   v-model="feedback.name"
-                  :placeholder="t('contact.form.name')"
+                  :placeholder="$t('contact.form.name')"
                   required
                   type="text"
                   name="txtMailName"
@@ -34,7 +34,7 @@
               <div class="contact-form-col-left mt-2">
                 <input
                   v-model="feedback.email"
-                  :placeholder="t('contact.form.email')"
+                  :placeholder="$t('contact.form.email')"
                   required
                   type="text"
                   name="txtMailFrom"
@@ -45,7 +45,7 @@
               <div class="contact-form-col-left mt-2">
                 <input
                   v-model="feedback.subject"
-                  :placeholder="t('contact.form.subject')"
+                  :placeholder="$t('contact.form.subject')"
                   type="text"
                   name="txtMailSubject"
                   id="txtMailSubject"
@@ -62,15 +62,15 @@
                   cols="40"
                   rows="3"
                   aria-invalid="false"
-                  :placeholder="t('contact.form.message')"
+                  :placeholder="$t('contact.form.message')"
                   class="block w-full rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 ></textarea>
               </div>
               <div class="contact-form-col-right mt-2">
                 <input
-                  :value="t('contact.form.submit')"
+                  :value="$t('contact.form.submit')"
                   type="submit"
-                  class="block w-full rounded-md border-0 px-2 py-2 bg-primary hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-white"
+                  class="block w-full rounded-md border-0 px-2 py-2 bg-primary transition-all hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-white"
                 />
               </div>
             </div>
@@ -129,14 +129,9 @@
 <script>
 import contactService from "../../services/contact.service";
 import ScrollReveal from "scrollreveal";
-
 import { useI18n } from "vue-i18n";
 
 export default {
-  setup() {
-    const { t } = useI18n();
-    return { t };
-  },
   data() {
     return {
       isError: false,
