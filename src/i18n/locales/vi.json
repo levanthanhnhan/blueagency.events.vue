@@ -16,7 +16,15 @@
   },
   "service": {
     "header": "Dịch vụ",
-    "description": ""
+    "description": "",
+    "items": {
+      "adversiting": "Quảng cáo",
+      "entertainment": "Giải trí",
+      "activation": "Quang bá thương hiệu",
+      "media": "Truyền thông",
+      "opening": "Khai trương",
+      "roadshow": "Quảng cáo trên đường phố"
+    }
   },
   "client": {
     "header": "Khách hàng",
@@ -34,6 +42,7 @@
     }
   },
   "footer": {
+    "description": "CÔNG TY TNHH SỰ KIỆN VÀ TRUYỀN THÔNG BLUE AGENCY",
     "contact": {
       "header": "Liên hệ",
       "address": "Tầng 3, 29 Hà Nội, phường Phú Nhuận, Tp Huế"

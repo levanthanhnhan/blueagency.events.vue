@@ -7,11 +7,11 @@
         <!-- Logo -->
         <div class="w-full px-4 md:w-1/3">
           <div class="w-full mb-10">
-            <a href="../" class="mb-6 inline-block max-w-[160px]">
+            <router-link :to="'/'" class="mb-6 inline-block max-w-[160px]">
               <img src="../../../src/assets/images/logo.png" alt="" />
-            </a>
+            </router-link>
             <p class="text-white mb-7 text-sm">
-              BLUE AGENCY EVENT AND COMMUNICATION COMPANY LIMITED
+              {{ $t("footer.description") }}
             </p>
           </div>
         </div>
@@ -98,7 +98,8 @@
             </h4>
             <div class="flex items-center mb-6">
               <a
-                href="javascript:void(0)"
+                target="_blank"
+                href="https://www.facebook.com/blueagency.events"
                 class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg
@@ -113,7 +114,8 @@
                 </svg>
               </a>
               <a
-                href="javascript:void(0)"
+                target="_blank"
+                href="https://www.youtube.com/channel/UC9WCE6tNMI30a5mMITqFuzA/"
                 class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
               >
                 <svg

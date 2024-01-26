@@ -94,7 +94,7 @@
             />
           </svg>
           <span class="sr-only">Info</span>
-          <div>
+          <div class="text-[15px]">
             <span class="font-medium">Sorry!</span> Error submiting form. Please
             try again later!
           </div>
@@ -117,7 +117,7 @@
             />
           </svg>
           <span class="sr-only">Info</span>
-          <div>
+          <div class="text-[15px]">
             <span class="font-medium">Thank you!</span> Your feedback has been
             submitted successfully!
           </div>

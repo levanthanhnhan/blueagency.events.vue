@@ -16,7 +16,15 @@
   },
   "service": {
     "header": "Service",
-    "description": ""
+    "description": "",
+    "items": {
+      "adversiting": "Adversiting",
+      "entertainment": "Entertainment",
+      "activation": "Activation",
+      "media": "Media",
+      "opening": "Opening",
+      "roadshow": "Road Show"
+    }
   },
   "client": {
     "header": "Client",
@@ -34,6 +42,7 @@
     }
   },
   "footer": {
+    "description": "BLUE AGENCY EVENT AND COMMUNICATION COMPANY LIMITED",
     "contact": {
       "header": "Contact",
       "address": "3rd Floor, 29 Ha Noi, Phu Nhuan, Hue City"

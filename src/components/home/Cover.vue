@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="relative px-0 py-0 text-white bg-black">
+  <section id="cover" class="relative px-0 py-0 text-white bg-black">
     <video
       class="w-full h-screen object-cover"
       src="../../../src/assets/data/cover.mp4"

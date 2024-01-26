@@ -7,23 +7,30 @@ import Contact from "../components/home/Contact.vue";
 </script>
 
 <template>
-  <Cover ref="cover" />
-  <About ref="about" />
-  <Service ref="service" />
-  <Client ref="client" />
-  <Contact ref="contact" />
+  <Cover />
+  <About />
+  <Service />
+  <Client />
+  <Contact />
 </template>
 
 <script>
 import common from "@/utils/common";
-export default {
-  mounted() {
-    var header = document.getElementById("header");
-    var navMenuDiv = document.getElementById("nav-content");
 
-    if (!common.isUrlHasSub() && navMenuDiv.classList.contains("hidden")) {
-      header.classList.remove("gradient-animation");
-    }
+export default {
+  methods: {
+    setHeaderNav() {
+      var header = document.getElementById("header");
+      var navMenuDiv = document.getElementById("nav-content");
+
+      if (!common.isUrlHasSub() && navMenuDiv.classList.contains("hidden")) {
+        header.classList.remove("gradient-animation");
+      }
+    },
+  },
+  mounted() {
+    this.setHeaderNav();
+    common.getGallery();
   },
 };
 </script>
