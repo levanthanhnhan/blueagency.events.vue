@@ -16,6 +16,7 @@ import Contact from "../components/home/Contact.vue";
 
 <script>
 import common from "@/utils/common";
+import cloudinaryService from "@/services/cloudinary.service";
 
 export default {
   methods: {
@@ -30,7 +31,8 @@ export default {
   },
   mounted() {
     this.setHeaderNav();
-    common.getGallery();
+    cloudinaryService.getGallery();
+    // common.getGallery();
   },
 };
 </script>

@@ -91,7 +91,4 @@
   .blurred-img.loaded img {
     opacity: 1;
   }
-  .blurred-img.loaded {
-    background-image: none !important;
-  }
 }
