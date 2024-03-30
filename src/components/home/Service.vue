@@ -16,27 +16,25 @@
         v-for="service in services"
         v-bind:key="service.title"
       >
-        <div class="service-card-shadow rounded-xl overflow-hidden">
-          <!-- Image -->
-          <div class="flex-0 shadow-md">
-            <img :src="service.src" :alt="service.title" />
-          </div>
-          <!-- card body -->
-          <div class="flex-1 mt-auto p-6">
-            <div class="flex flex-col flex-grow flex-shrink justify-start">
-              <h6 class="flex-none mb-2">
-                <router-link
-                  :to="`/service/${service.title
-                    .replace(' ', '')
-                    .toLowerCase()}`"
-                >
+        <router-link
+          :to="`/service/${service.title.replace(' ', '').toLowerCase()}`"
+        >
+          <div class="service-card-shadow rounded-xl overflow-hidden">
+            <!-- Image -->
+            <div class="flex-0 shadow-md">
+              <img :src="service.src" :alt="service.title" />
+            </div>
+            <!-- card body -->
+            <div class="flex-1 mt-auto p-6">
+              <div class="flex flex-col flex-grow flex-shrink justify-start">
+                <h6 class="flex-none mb-2">
                   <span class="font-bold text-xl">{{ service.title }}</span>
-                </router-link>
-              </h6>
-              <small class="flex-1 text-sm">{{ service.description }}</small>
+                </h6>
+                <small class="flex-1 text-sm">{{ service.description }}</small>
+              </div>
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </section>
@@ -53,32 +51,32 @@ export default {
         {
           src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
           title: "Adversiting",
-          description: "Best for hotel, listing and directory website",
+          description: "Description...",
         },
         {
           src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
           title: "Entertainment",
-          description: "Best for hotel, listing and directory website",
+          description: "Description...",
         },
         {
           src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
           title: "Activation",
-          description: "Best for hotel, listing and directory website",
+          description: "Description...",
         },
         {
           src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
           title: "Media",
-          description: "Best for hotel, listing and directory website",
+          description: "Description...",
         },
         {
           src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
           title: "Opening",
-          description: "Best for hotel, listing and directory website",
+          description: "Description...",
         },
         {
           src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
           title: "Road Show",
-          description: "Best for hotel, listing and directory website",
+          description: "Description...",
         },
       ],
     };

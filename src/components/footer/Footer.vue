@@ -24,7 +24,7 @@
             <ul class="space-y-3">
               <li class="flex items-center">
                 <p
-                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4"
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4 hover:border-primary hover:bg-primary hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@
               </li>
               <li class="flex items-center text-sm font-medium">
                 <p
-                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4"
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4 hover:border-primary hover:bg-primary hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@
               </li>
               <li class="flex items-center text-sm font-medium">
                 <p
-                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4"
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke sm:mr-4 lg:mr-3 xl:mr-4 hover:border-primary hover:bg-primary hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ export default {
     },
   },
   mounted() {
-    //this.registerFacebook();
+    this.registerFacebook();
   },
 };
 </script>

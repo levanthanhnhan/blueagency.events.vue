@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps(["titles"]);
+console.log(props);
 </script>
 
 <template>
@@ -49,7 +50,7 @@ const props = defineProps(["titles"]);
             :to="'/service'"
             class="ms-1 text-md font-medium text-gray-700 hover:text-primary md:ms-2"
           >
-            {{ props.titles[0] }}
+            {{ $t("nav.service") }}
           </router-link>
         </div>
       </li>
