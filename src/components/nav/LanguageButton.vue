@@ -89,7 +89,6 @@ const selected = ref(languages[0]);
 
 <script>
 import ScrollReveal from "scrollreveal";
-import { useI18n } from "vue-i18n";
 import trans from "@/i18n/translation";
 
 export default {

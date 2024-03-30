@@ -1,8 +1,8 @@
 <template>
-  <section id="service" class="bg-white pb-8 text-gray-900">
+  <section id="service" class="bg-white pt-8 text-gray-900">
     <div class="container mx-auto flex flex-wrap pt-4 pb-10">
       <h2
-        class="mt-20 w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase services"
+        class="w-full mb-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase services"
       >
         {{ $t("service.header") }}
       </h2>
@@ -28,7 +28,13 @@
             <div class="flex-1 mt-auto p-6">
               <div class="flex flex-col flex-grow flex-shrink justify-start">
                 <h6 class="flex-none mb-2">
-                  <span class="font-bold text-xl">{{ service.title }}</span>
+                  <span class="font-bold text-xl">{{
+                    $t(
+                      `service.items.${service.title
+                        .replace(" ", "")
+                        .toLowerCase()}`
+                    )
+                  }}</span>
                 </h6>
                 <small class="flex-1 text-sm">{{ service.description }}</small>
               </div>
@@ -88,6 +94,7 @@ export default {
     if (common.isUrlHasSub()) {
       var header = document.getElementById("header");
       header.classList.add("gradient-animation");
+      document.getElementById("service").classList.add("pt-[90px]");
     }
   },
 };

@@ -1,111 +1,115 @@
-$(document).ready(function(){
-	alert("a")
-	changeNavebar();
+$(document).ready(function () {
+  alert("a");
+  changeNavebar();
 
-	channelSplit(document.getElementById("sologanChanel"));
+  channelSplit(document.getElementById("sologanChanel"));
 
-	var _offset = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? 50 : 20;
+  var _offset = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? 50 : 20;
 
-	$("nav").removeClass("scrolled");
+  $("nav").removeClass("scrolled");
 
-	window.onscroll = function () {
-		scaleLogo();
-	};
+  window.onscroll = function () {
+    scaleLogo();
+  };
 
-	$("#btnContactUs").click(function () {
-		var url = "https://www.facebook.com/blueeventagency/";
-		window.open(url, '_blank');
-	});
-	
-	$("a[rel='relPageScroll']").mPageScroll2id({
-        offset: _offset
-    });
+  $("#btnContactUs").click(function () {
+    var url = "https://www.facebook.com/blueeventagency/";
+    window.open(url, "_blank");
+  });
 
-	// var form = document.getElementById("formMail");
-	// form.addEventListener('submit', submitFeedback);
+  $("a[rel='relPageScroll']").mPageScroll2id({
+    offset: _offset,
+  });
 });
 
 function changeNavebar() {
-	var fixedNav = $('.navbar-fixed-top');
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 10) {
-			fixedNav.addClass('scrolled');
-			$('body').addClass('scrolled');
-		} else {
-			fixedNav.removeClass('scrolled');
-			$('body').removeClass('scrolled');
-		}
-	});
+  var fixedNav = $(".navbar-fixed-top");
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 10) {
+      fixedNav.addClass("scrolled");
+      $("body").addClass("scrolled");
+    } else {
+      fixedNav.removeClass("scrolled");
+      $("body").removeClass("scrolled");
+    }
+  });
 }
 
 function scaleLogo() {
-	var logo = document.getElementById("imgLogo")
-	if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-		logo.style.width = '110px';
-	} else {
-		logo.style.width = '180px';
-	}
+  var logo = document.getElementById("imgLogo");
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    logo.style.width = "110px";
+  } else {
+    logo.style.width = "180px";
+  }
 }
 
 function submitFeedback(event) {
-	event.preventDefault();
+  event.preventDefault();
 
-	$('#resultSendMail').empty();
+  $("#resultSendMail").empty();
 
-	if ($('#txtMailName').val().trim() == "" || $('#txtMailFrom').val().trim() == "") {
-		return;
-	}
+  if (
+    $("#txtMailName").val().trim() == "" ||
+    $("#txtMailFrom").val().trim() == ""
+  ) {
+    return;
+  }
 
-	$.ajax({
-		url: "/api/email/feedback",
-		type: "POST",
-		data: $('#formMail').serialize(),
-		success: function (response) {
-			if (response == "0") {
-				sendMailSuccess();
-			} else {
-				sendMailFailed();
-			}
-		},
-		error: function (jqXHR, textStatus, errorThrown) {
-			console.log(textStatus, errorThrown);
-			sendMailFailed();
-		}
-	});
+  $.ajax({
+    url: "/api/email/feedback",
+    type: "POST",
+    data: $("#formMail").serialize(),
+    success: function (response) {
+      if (response == "0") {
+        sendMailSuccess();
+      } else {
+        sendMailFailed();
+      }
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+      console.log(textStatus, errorThrown);
+      sendMailFailed();
+    },
+  });
 }
 
 function sendMailSuccess() {
-	$('#txtMailName').val("");
-	$('#txtMailFrom').val("");
-	$('#txtMailSubject').val("");
-	$('#txtMailBody').val("");
-	$('#resultSendMail').append("<div class='alert alert-success' role='alert'>Your email has been sent successfully.</div>");
+  $("#txtMailName").val("");
+  $("#txtMailFrom").val("");
+  $("#txtMailSubject").val("");
+  $("#txtMailBody").val("");
+  $("#resultSendMail").append(
+    "<div class='alert alert-success' role='alert'>Your email has been sent successfully.</div>"
+  );
 }
 
 function sendMailFailed() {
-	$('#txtMailName').val("");
-	$('#txtMailFrom').val("");
-	$('#txtMailSubject').val("");
-	$('#txtMailBody').val("");
-	$('#resultSendMail').append("<div class='alert alert-danger' role='alert'>Sorry, server is busy. Please try again later.</div>");
+  $("#txtMailName").val("");
+  $("#txtMailFrom").val("");
+  $("#txtMailSubject").val("");
+  $("#txtMailBody").val("");
+  $("#resultSendMail").append(
+    "<div class='alert alert-danger' role='alert'>Sorry, server is busy. Please try again later.</div>"
+  );
 }
 
 function channelSplit(elem) {
-	if (elem) {
-		const inner = elem.innerHTML;
-		elem.innerHTML = "";
+  if (elem) {
+    const inner = elem.innerHTML;
+    elem.innerHTML = "";
 
-		const spanHidden = document.createElement("span");
-		spanHidden.classList.add("channel-split-static");
-		spanHidden.innerHTML = inner;
-		elem.appendChild(spanHidden);
+    const spanHidden = document.createElement("span");
+    spanHidden.classList.add("channel-split-static");
+    spanHidden.innerHTML = inner;
+    elem.appendChild(spanHidden);
 
-		["red", "green", "blue"].forEach(x => {
-			const span = document.createElement("span");
-			span.classList.add("channel-split");
-			span.classList.add(`channel-split-${x}`);
-			span.innerHTML = inner;
-			elem.appendChild(span);
-		});
-	}
+    ["red", "green", "blue"].forEach((x) => {
+      const span = document.createElement("span");
+      span.classList.add("channel-split");
+      span.classList.add(`channel-split-${x}`);
+      span.innerHTML = inner;
+      elem.appendChild(span);
+    });
+  }
 }

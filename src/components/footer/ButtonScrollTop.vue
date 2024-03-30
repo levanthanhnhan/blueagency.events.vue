@@ -38,8 +38,8 @@
   position: fixed;
   z-index: 50;
   padding: 0;
-  right: 30px;
-  bottom: 20px;
+  right: 35px;
+  bottom: 100px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);

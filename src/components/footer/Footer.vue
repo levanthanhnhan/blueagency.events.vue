@@ -147,18 +147,17 @@
     ></div>
 
     <!-- Button Scroll To Top -->
-    <ButtonScrollTop />
+    <!-- <ButtonScrollTop /> -->
   </footer>
 </template>
 
 <script>
-import ButtonScrollTop from "./ButtonScrollTop.vue";
-import { useI18n } from "vue-i18n";
+// import ButtonScrollTop from "./ButtonScrollTop.vue";
 
 export default {
-  components: {
-    ButtonScrollTop,
-  },
+  // components: {
+  //   ButtonScrollTop,
+  // },
   methods: {
     registerFacebook() {
       /* Register Fb Messenger */

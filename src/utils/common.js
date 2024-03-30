@@ -1,4 +1,8 @@
 import galleryService from "@/services/gallery.service";
+import AES from "crypto-js/aes";
+import Utf8 from "crypto-js/enc-utf8";
+
+var secretKey = import.meta.env.VITE_CRYPTO_KEY;
 
 class Common {
   isUrlHasSub() {
@@ -45,7 +49,8 @@ class Common {
       appendItems += appendItem;
     });
 
-    localStorage.setItem(data.key, appendItems);
+    const encrypt = this.encryption(appendItems);
+    localStorage.setItem(data.key, encrypt);
   }
 
   setBlurLoadedGallery() {
@@ -62,6 +67,15 @@ class Common {
         img.addEventListener("load", loaded);
       }
     });
+  }
+
+  encryption(data) {
+    return AES.encrypt(JSON.stringify(data), secretKey).toString();
+  }
+
+  decryption(data) {
+    const bytes = AES.decrypt(data, secretKey);
+    return JSON.parse(bytes.toString(Utf8));
   }
 }
 

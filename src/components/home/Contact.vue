@@ -1,8 +1,8 @@
 <template>
-  <section id="contact" class="bg-white pb-8 text-gray-900">
+  <section id="contact" class="bg-white py-8 text-gray-900">
     <div class="container mx-auto flex flex-wrap pt-4 pb-10">
       <h2
-        class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase contact"
+        class="w-full my-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase contact"
       >
         {{ $t("contact.header") }}
       </h2>
@@ -18,7 +18,7 @@
       </p>
       <div class="w-11/12 mx-auto">
         <form @submit.prevent="submitFeedback">
-          <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-6">
+          <div class="mt-10 grid grid-cols-1 gap-x-6 sm:grid-cols-6">
             <div class="sm:col-span-3">
               <div class="contact-form-col-left mt-2">
                 <input
@@ -127,9 +127,8 @@
   </section>
 </template>
 <script>
-import contactService from "../../services/contact.service";
+import feedbackService from "../../services/feedback.service";
 import ScrollReveal from "scrollreveal";
-import { useI18n } from "vue-i18n";
 
 export default {
   data() {
@@ -146,7 +145,7 @@ export default {
   },
   methods: {
     submitFeedback() {
-      contactService
+      feedbackService
         .sendFeedback(this.feedback)
         .then((result) => {
           if (result == "0") {
@@ -196,3 +195,4 @@ export default {
   },
 };
 </script>
+../../services/feedback.service

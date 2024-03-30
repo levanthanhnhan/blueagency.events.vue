@@ -1,8 +1,8 @@
 <template>
-  <section id="client" class="bg-white pb-8 text-gray-900">
+  <section id="client" class="bg-white pt-8 text-gray-900">
     <div class="container mx-auto flex flex-wrap pt-4 pb-10">
       <h2
-        class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase clients"
+        class="w-full my-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase clients"
       >
         {{ $t("client.header") }}
       </h2>
@@ -32,58 +32,59 @@
 
 <script>
 import ScrollReveal from "scrollreveal";
-import { useI18n } from "vue-i18n";
+const CLOUDINARY_BASE_CLIENT =
+  "https://res.cloudinary.com/dss6pknik/image/upload/v1704790860/";
 
 export default {
   data() {
     return {
       clients: [
         {
-          src: "../../../src/assets/images/brands/brand1.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/wy4kfl3e4uyixdvdaxek.png",
           alt: "SaigonTourist",
         },
         {
-          src: "../../../src/assets/images/brands/brand2.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/w3mupjt57ghm60jqpmj2.png",
           title: "Azaki",
         },
         {
-          src: "../../../src/assets/images/brands/brand3.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/bno7uzvvnbcpxvckfohy.png",
           title: "ShareTea",
         },
         {
-          src: "../../../src/assets/images/brands/brand4.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/bbbutpd1rmwelcfzfqni.png",
           title: "RainGod",
         },
         {
-          src: "../../../src/assets/images/brands/brand5.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/b1ub516b6qgzbys5y0nj.png",
           alt: "DMH",
         },
         {
-          src: "../../../src/assets/images/brands/brand6.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/aio5nvbsvzo8qkwgtw9q.png",
           title: "Olmix AsianLand",
         },
         {
-          src: "../../../src/assets/images/brands/brand7.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/wuyqjnd72lebug81hgno.png",
           title: "LocThinh Head",
         },
         {
-          src: "../../../src/assets/images/brands/brand8.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/gnks46onbryi4gh3p70r.png",
           title: "Gongcha",
         },
         {
-          src: "../../../src/assets/images/brands/brand9.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/qhsruezlygpywgdyhr1c.png",
           alt: "BKAV",
         },
         {
-          src: "../../../src/assets/images/brands/brand10.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/liuqyoxidqvseolkzwne.png",
           title: "VNPay",
         },
         {
-          src: "../../../src/assets/images/brands/brand11.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/coyuzqrqh4c0zegnqrot.png",
           title: "ShareKafe",
         },
         {
-          src: "../../../src/assets/images/brands/brand12.png",
+          src: CLOUDINARY_BASE_CLIENT + "clients/uwe9gzhusax9qyulsmqk.png",
           title: "Ecopark",
         },
       ],

@@ -9,12 +9,9 @@
       muted
     ></video>
     <div
-      class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center justify-center"
+      class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center w-[90%]"
     >
-      <div
-        id="sologanChanel"
-        class="sm:text-4xl md:text-7xl lg:text-7xl cover-description"
-      >
+      <div id="sologanChanel" class="text-3xl lg:text-7xl cover-description">
         ONE TEAM - ONE DREAM
       </div>
     </div>
@@ -56,16 +53,14 @@ export default {
 </script>
 
 <style>
-.channel-split-wrapper {
-  position: relative;
-  font-size: 64px;
-}
 .channel-split-static {
   opacity: 0;
 }
 .channel-split {
   position: absolute;
   left: 0;
+  right: 0;
+  margin: auto;
   mix-blend-mode: difference;
 }
 .channel-split-red {

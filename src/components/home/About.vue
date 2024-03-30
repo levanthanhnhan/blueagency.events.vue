@@ -1,6 +1,5 @@
 <script>
 import ScrollReveal from "scrollreveal";
-import { useI18n } from "vue-i18n";
 
 export default {
   mounted() {
@@ -12,10 +11,10 @@ export default {
 </script>
 
 <template>
-  <section id="about" class="bg-white py-8 text-gray-900">
+  <section id="about" class="bg-white pt-8 text-gray-900">
     <div class="container mx-auto flex flex-wrap pt-4 pb-10">
       <h2
-        class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase about"
+        class="w-full my-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase about"
       >
         {{ $t("about.header") }}
       </h2>
@@ -32,8 +31,8 @@ export default {
       <iframe
         class="w-full aspect-video px-6 about-video"
         height="500"
-        src="https://www.youtube.com/embed/vlq_mMjr0Og"
-        title="YouTube video player"
+        src="https://www.youtube.com/embed/IcFogOzWusQ"
+        title="Blue Agency Events"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen

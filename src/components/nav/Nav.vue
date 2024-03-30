@@ -12,7 +12,7 @@
           />
         </router-link>
       </div>
-      <div class="block lg:hidden bg-blur border rounded-lg">
+      <div class="block lg:hidden bg-blur border rounded-lg mr-[20px]">
         <button
           id="nav-toggle"
           class="flex items-center p-1 text-gray-200 hover:text-primary focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
@@ -158,8 +158,6 @@ export default {
     },
   },
   mounted() {
-    // ScrollReveal().reveal(".nav-logo", { delay: 200, origin: "left" });
-    // ScrollReveal().reveal(".nav-item", { origin: "top", interval: 100 });
     this.scrollNavBar();
 
     document.onclick = this.toggleCheck;
