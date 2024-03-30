@@ -1,6 +1,5 @@
 <script setup>
 const props = defineProps(["titles"]);
-console.log(props);
 </script>
 
 <template>
@@ -72,7 +71,7 @@ console.log(props);
             />
           </svg>
           <span class="ms-1 text-md font-medium text-gray-500 md:ms-2">{{
-            props.titles[1]
+            $t(`${props.titles}`)
           }}</span>
         </div>
       </li>

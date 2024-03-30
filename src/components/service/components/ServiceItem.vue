@@ -19,7 +19,7 @@ onMounted(() => {
   header.classList.add("gradient-animation");
 
   var storeData = localStorage.getItem(
-    props.breadcrumbs[1].replace(" ", "").toLowerCase()
+    props.breadcrumbs.replace(" ", "").toLowerCase()
   );
   document.getElementById("gallery").innerHTML = storeData;
 
@@ -29,9 +29,7 @@ onMounted(() => {
 
 <template>
   <section>
-    <!-- Breadcrumb -->
     <div class="container mx-auto pt-20 sm:pb-6 pb-8">
-      <!-- Breadcrumb -->
       <Breadcrumb :titles="breadcrumbs"></Breadcrumb>
     </div>
 
@@ -39,7 +37,7 @@ onMounted(() => {
       <h2
         class="w-full my-2 sm:text-xl md:text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase"
       >
-        {{ breadcrumbs[1] }}
+        {{ $t(`${breadcrumbs}`) }}
       </h2>
       <div class="w-full">
         <div
