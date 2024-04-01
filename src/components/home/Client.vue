@@ -10,10 +10,10 @@
         <div class="h-1 mx-auto gradient w-64 opacity-25 rounded-t"></div>
       </div>
       <div
-        class="w-full px-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        class="w-full px-6 lg:pt-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         <div
-          class="p-4 grayscale transition duration-200 hover:grayscale-0 clients-item"
+          class="p-8 grayscale transition duration-200 hover:grayscale-0 clients-item"
           v-for="client in clients"
           v-bind:key="client.alt"
         >
