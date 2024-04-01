@@ -1,5 +1,5 @@
 <template>
-  <section id="cover" class="relative px-0 py-0 text-white bg-black">
+  <section id="cover" class="relative px-0 py-0">
     <video
       class="w-full mx-auto h-screen object-cover"
       src="../../../src/assets/data/cover.mp4"
@@ -45,7 +45,7 @@ export default {
   mounted() {
     ScrollReveal().reveal(".cover-description", {
       delay: 300,
-      origin: "right",
+      origin: "left",
     });
     this.channelSplit(document.getElementById("sologanChanel"));
   },

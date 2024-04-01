@@ -7,11 +7,13 @@ import Contact from "../components/home/Contact.vue";
 </script>
 
 <template>
-  <!-- <Cover /> -->
-  <!-- <About /> -->
-  <Service />
-  <Client />
-  <!-- <Contact /> -->
+  <div class="pb-8">
+    <Cover />
+    <About />
+    <Service />
+    <Client />
+    <Contact />
+  </div>
 </template>
 
 <script>

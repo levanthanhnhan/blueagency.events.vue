@@ -1,18 +1,16 @@
 <template>
-  <section id="contact" class="bg-white py-8 text-gray-900">
-    <div class="container w-full mx-auto pt-4 pb-10">
+  <section id="contact" class="bg-white pt-8 lg:pt-20 text-gray-900">
+    <div class="container w-full mx-auto">
       <h2
-        class="mx-auto my-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase contact"
+        class="w-full py-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase about"
       >
         {{ $t("contact.header") }}
       </h2>
       <div class="w-full">
-        <div
-          class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-        ></div>
+        <div class="h-1 mx-auto gradient w-64 opacity-25 rounded-t"></div>
       </div>
       <p
-        class="py-4 text-xl max-w-3xl mx-auto text-gray-500 text-center contact-description"
+        class="py-6 text-xl max-w-3xl mx-auto text-gray-500 text-center leading-tight contact-description"
       >
         {{ $t("contact.description") }}
       </p>
@@ -189,7 +187,7 @@ export default {
       interval: 200,
     });
     ScrollReveal().reveal(".contact-form-col-right", {
-      origin: "right",
+      origin: "left",
       interval: 200,
     });
   },

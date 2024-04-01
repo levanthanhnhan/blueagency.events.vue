@@ -1,7 +1,5 @@
 <template>
-  <footer
-    class="relative z-10 bg-white pt-20 pb-10 lg:pb-20 gradient-animation"
-  >
+  <footer class="relative pt-8 gradient-animation">
     <div class="container mx-auto">
       <div class="flex flex-wrap justify-around">
         <!-- Logo -->

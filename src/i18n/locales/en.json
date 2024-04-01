@@ -6,7 +6,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "service": "Service",
+    "service": "Services",
     "client": "Client",
     "contact": "Contact"
   },
@@ -15,7 +15,7 @@
     "description": "With the criteria of being enthusiastic and always creative at work. We hope our customers will have a different and wonderful experience coming to Blue team."
   },
   "service": {
-    "header": "Service",
+    "header": "Services",
     "description": "",
     "items": {
       "adversiting": "Adversiting",
