@@ -2,7 +2,7 @@
   <section id="service" class="bg-white pt-8 text-gray-900">
     <div class="container mx-auto flex flex-wrap pt-4 pb-10">
       <h2
-        class="w-full mb-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase services"
+        class="mx-auto mb-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase services"
       >
         {{ $t("service.header") }}
       </h2>
@@ -12,7 +12,7 @@
         ></div>
       </div>
       <div
-        class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink services-cards"
+        class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink services-cards"
         v-for="service in services"
         v-bind:key="service.title"
       >

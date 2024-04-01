@@ -1,8 +1,8 @@
 <template>
   <section id="contact" class="bg-white py-8 text-gray-900">
-    <div class="container mx-auto flex flex-wrap pt-4 pb-10">
+    <div class="container w-full mx-auto pt-4 pb-10">
       <h2
-        class="w-full my-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase contact"
+        class="mx-auto my-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase contact"
       >
         {{ $t("contact.header") }}
       </h2>
@@ -16,9 +16,9 @@
       >
         {{ $t("contact.description") }}
       </p>
-      <div class="w-11/12 mx-auto">
+      <div class="px-4">
         <form @submit.prevent="submitFeedback">
-          <div class="mt-10 grid grid-cols-1 gap-x-6 sm:grid-cols-6">
+          <div class="mt-5 grid grid-cols-1 gap-x-6 sm:grid-cols-6">
             <div class="sm:col-span-3">
               <div class="contact-form-col-left mt-2">
                 <input
@@ -28,7 +28,7 @@
                   type="text"
                   name="txtMailName"
                   id="txtMailName"
-                  class="block w-full rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
+                  class="block w-full mx-auto rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 />
               </div>
               <div class="contact-form-col-left mt-2">
@@ -39,7 +39,7 @@
                   type="text"
                   name="txtMailFrom"
                   id="txtMailFrom"
-                  class="block w-full rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
+                  class="block w-full mx-auto rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 />
               </div>
               <div class="contact-form-col-left mt-2">
@@ -49,7 +49,7 @@
                   type="text"
                   name="txtMailSubject"
                   id="txtMailSubject"
-                  class="block w-full rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
+                  class="block w-full mx-auto rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -63,14 +63,14 @@
                   rows="3"
                   aria-invalid="false"
                   :placeholder="$t('contact.form.message')"
-                  class="block w-full rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
+                  class="block w-full mx-auto rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 ></textarea>
               </div>
               <div class="contact-form-col-right mt-2">
                 <input
                   :value="$t('contact.form.submit')"
                   type="submit"
-                  class="block w-full rounded-md border-0 px-2 py-2 bg-primary transition-all hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-white"
+                  class="block w-full mx-auto rounded-md border-0 px-2 py-2 bg-primary transition-all hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-white"
                 />
               </div>
             </div>

@@ -12,9 +12,9 @@ export default {
 
 <template>
   <section id="about" class="bg-white pt-8 text-gray-900">
-    <div class="container mx-auto flex flex-wrap pt-4 pb-10">
+    <div class="container w-full flex flex-wrap pt-4 pb-10">
       <h2
-        class="w-full my-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase about"
+        class="mx-auto my-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase about"
       >
         {{ $t("about.header") }}
       </h2>
@@ -29,7 +29,7 @@ export default {
         {{ $t("about.description") }}
       </p>
       <iframe
-        class="w-full aspect-video px-6 about-video"
+        class="w-full mx-auto aspect-video px-6 about-video"
         height="500"
         src="https://www.youtube.com/embed/IcFogOzWusQ"
         title="Blue Agency Events"

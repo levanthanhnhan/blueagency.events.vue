@@ -65,7 +65,6 @@
 
 <script>
 import LanguageButton from "./LanguageButton.vue";
-import ScrollReveal from "scrollreveal";
 import common from "@/utils/common";
 
 export default {

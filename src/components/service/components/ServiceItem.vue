@@ -50,7 +50,10 @@ onMounted(() => {
       </div>
       <div class="w-full py-8 px-4 text-xl mx-auto text-gray-500 text-center">
         <!-- gallery -->
-        <div class="pswp-gallery grid grid-cols-4 gap-4" id="gallery"></div>
+        <div
+          class="pswp-gallery grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          id="gallery"
+        ></div>
       </div>
     </div>
   </section>
