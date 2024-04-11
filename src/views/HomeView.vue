@@ -4,13 +4,14 @@ import About from "../components/home/About.vue";
 import Service from "../components/home/Service.vue";
 import Client from "../components/home/Client.vue";
 import Contact from "../components/home/Contact.vue";
+import NewService from "../components/home/NewService.vue";
 </script>
 
 <template>
   <div class="pb-8">
     <Cover />
     <About />
-    <Service />
+    <NewService />
     <Client />
     <Contact />
   </div>
