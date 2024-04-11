@@ -13,7 +13,17 @@
         </router-link>
       </div>
       <div class="block lg:hidden bg-blur border rounded-lg mr-[20px]">
-        <button
+        <div
+          class="flex items-center p-2 text-gray-200 hover:text-primary focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+        >
+          <div id="nav-toggle" class="tham tham-e-squeeze tham-w-6">
+            <div class="tham-box">
+              <div class="tham-inner bg-gray-100" />
+            </div>
+          </div>
+        </div>
+
+        <!-- <button
           id="nav-toggle"
           class="flex items-center p-1 text-gray-200 hover:text-primary focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
         >
@@ -31,7 +41,7 @@
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-        </button>
+        </button> -->
       </div>
       <div
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20"
@@ -130,6 +140,7 @@ export default {
       var navMenuDiv = document.getElementById("nav-content");
       var navMenu = document.getElementById("nav-toggle");
       var header = document.getElementById("header");
+      var tham = document.querySelector(".tham");
       var target = (e && e.target) || (event && event.srcElement);
 
       //Nav Menu
@@ -149,16 +160,24 @@ export default {
         } else {
           // click both outside link and outside menu, hide menu
           navMenuDiv.classList.add("hidden");
+          tham.classList.remove("tham-active");
           if (!common.isUrlHasSub() && window.scrollY < 10) {
             header.classList.remove("gradient-animation");
           }
         }
       }
     },
+    initMenuNav() {
+      const tham = document.querySelector(".tham");
+
+      tham.addEventListener("click", () => {
+        tham.classList.toggle("tham-active");
+      });
+    },
   },
   mounted() {
     this.scrollNavBar();
-
+    this.initMenuNav();
     document.onclick = this.toggleCheck;
   },
 };
