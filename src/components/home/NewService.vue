@@ -12,7 +12,7 @@
 
       <!-- description events -->
       <div class="pt-6 flex flex-wrap">
-        <div class="w-3/5 p-6">
+        <div class="w-4/6 p-6">
           <h3 class="text-3xl text-primary font-medium leading-none mb-3">
             EVENTS
           </h3>
@@ -43,7 +43,7 @@
             </svg>
           </button>
         </div>
-        <div class="w-2/5">
+        <div class="w-2/6">
           <img
             class="sm:h-64 mx-auto"
             src="../../assets/images/event.svg"
@@ -54,14 +54,14 @@
 
       <!-- description media -->
       <div class="pt-6 flex flex-wrap">
-        <div class="w-2/5 px-6">
+        <div class="px-6">
           <img
             class="sm:h-64 mx-auto float-left"
             src="../../assets/images/media.svg"
             alt="Media"
           />
         </div>
-        <div class="w-3/5">
+        <div class="w-4/6">
           <h3 class="text-3xl text-primary font-medium leading-none mb-3">
             MEDIA
           </h3>
@@ -97,7 +97,7 @@
 
       <!-- description design -->
       <div class="pt-6 flex flex-wrap">
-        <div class="w-3/5 p-6">
+        <div class="w-4/6 p-6">
           <h3 class="text-3xl text-primary font-medium leading-none mb-3">
             3D DESIGN
           </h3>
@@ -128,7 +128,7 @@
             </svg>
           </button>
         </div>
-        <div class="w-2/5">
+        <div class="">
           <img
             class="sm:h-64 mx-auto"
             src="../../assets/images/design.svg"
