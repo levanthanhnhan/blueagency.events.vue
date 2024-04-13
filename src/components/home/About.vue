@@ -109,9 +109,7 @@ export default {
       ></iframe>
 
       <!-- process working -->
-      <div
-        class="px-6 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl"
-      >
+      <div class="px-6 pt-12 mx-auto">
         <div
           class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
         >
@@ -121,7 +119,7 @@ export default {
         </div>
         <div class="grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3">
           <div
-            class="p-5 duration-300 transform bg-white border-2 border-dashed rounded shadow-sm border-primary hover:-translate-y-2"
+            class="p-5 duration-300 transform bg-white border-2 border-dashed rounded-xl shadow-sm border-primary hover:-translate-y-2"
           >
             <div class="flex items-center mb-2">
               <p
@@ -143,7 +141,7 @@ export default {
             </div>
           </div>
           <div
-            class="p-5 duration-300 transform bg-white border-2 border-dashed rounded shadow-sm border-primary hover:-translate-y-2"
+            class="p-5 duration-300 transform bg-white border-2 border-dashed rounded-xl shadow-sm border-primary hover:-translate-y-2"
           >
             <div class="flex items-center mb-2">
               <p
@@ -163,7 +161,7 @@ export default {
             </div>
           </div>
           <div
-            class="relative p-5 duration-300 transform bg-white border-2 rounded shadow-sm border-primary hover:-translate-y-2"
+            class="relative p-5 duration-300 transform bg-white border-2 rounded-xl shadow-sm border-primary hover:-translate-y-2"
           >
             <div class="flex items-center mb-2">
               <p
