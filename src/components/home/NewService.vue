@@ -10,130 +10,29 @@
         <div class="h-1 mx-auto gradient w-64 opacity-25 rounded-t"></div>
       </div>
 
-      <!-- description events -->
-      <div class="pt-6 flex flex-wrap">
-        <div class="w-4/6 p-6">
-          <h3 class="text-3xl text-primary font-medium leading-none mb-3">
-            EVENTS
-          </h3>
-          <p class="text-gray-600 mb-8">
-            Với hơn 10 năm kinh nghiệm tổ chức thành công nhiều chương trình, dự
-            án trong và ngoài nước, Blue Agency tự hào là sự lựa chọn đúng đắn,
-            người đồng hành tin cậy tạo nên những sự kiện chuyên nghiệp, nâng
-            tầm thương hiệu cho doanh nghiệp đối tác.
-          </p>
-          <button
-            class="py-2 px-5 border border-solid border-primary rounded-full gap-2 text-xs text-primary font-semibold flex items-center justify-between transition-all duration-500 hover:bg-primary hover:text-white"
+      <!-- description card -->
+      <div class="pt-4 flex flex-wrap">
+        <div
+          class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink services-cards"
+          v-for="item in services"
+          v-bind:key="item.title"
+        >
+          <div
+            class="flex flex-col flex-grow flex-shrink justify-center mt-auto p-6 rounded-xl service-card-shadow overflow-hidden border-2 border-primary border-opacity-30 hover:border-opacity-100"
           >
-            Xem thêm
-            <svg
-              class="stroke-primary"
-              width="6"
-              height="10"
-              viewBox="0 0 6 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <img class="sm:h-60 mx-auto" :src="item.src" :alt="item.title" />
+            <h6 class="flex-none mb-2">
+              <span class="font-bold text-xl text-primary">{{
+                item.title
+              }}</span>
+            </h6>
+            <small class="pb-6 flex-1 text-sm">{{ item.description }}</small>
+            <button
+              class="w-[110px] py-2 px-5 border border-solid border-primary rounded-full text-xs font-semibold transition-all duration-500 text-primary hover:bg-primary hover:text-white"
             >
-              <path
-                d="M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div class="w-2/6">
-          <img
-            class="sm:h-64 mx-auto"
-            src="../../assets/images/event.svg"
-            alt="Event"
-          />
-        </div>
-      </div>
-
-      <!-- description media -->
-      <div class="pt-6 flex flex-wrap">
-        <div class="px-6">
-          <img
-            class="sm:h-64 mx-auto float-left"
-            src="../../assets/images/media.svg"
-            alt="Media"
-          />
-        </div>
-        <div class="w-4/6">
-          <h3 class="text-3xl text-primary font-medium leading-none mb-3">
-            MEDIA
-          </h3>
-          <p class="text-gray-600 mb-8">
-            Với triết lý "Mang đến sản phẩm tốt nhất cho khách hàng". Chúng tôi
-            luôn đầu tư nhiều trang thiết bị hiện đại, đội ngũ nhân sự hàng đầu
-            trong ngành sản xuất phim ảnh, nhằm mang lại cho khách hàng những
-            sản phẩm (video/hình ảnh) ấn tượng và độc đáo. Qua đó góp phần cho
-            sự thắng lợi trong các chiến dịch Marketing
-          </p>
-          <button
-            class="py-2 px-5 float-right border border-solid border-primary rounded-full gap-2 text-xs text-primary font-semibold flex items-center justify-between transition-all duration-500 hover:bg-primary hover:text-white"
-          >
-            Xem thêm
-            <svg
-              class="stroke-primary"
-              width="6"
-              height="10"
-              viewBox="0 0 6 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- description design -->
-      <div class="pt-6 flex flex-wrap">
-        <div class="w-4/6 p-6">
-          <h3 class="text-3xl text-primary font-medium leading-none mb-3">
-            3D DESIGN
-          </h3>
-          <p class="text-gray-600 mb-8">
-            Với hơn 10 năm kinh nghiệm tổ chức thành công nhiều chương trình, dự
-            án trong và ngoài nước, Blue Agency tự hào là sự lựa chọn đúng đắn,
-            người đồng hành tin cậy tạo nên những sự kiện chuyên nghiệp, nâng
-            tầm thương hiệu cho doanh nghiệp đối tác.
-          </p>
-          <button
-            class="py-2 px-5 border border-solid border-primary rounded-full gap-2 text-xs text-primary font-semibold flex items-center justify-between transition-all duration-500 hover:bg-primary hover:text-white"
-          >
-            Xem thêm
-            <svg
-              class="stroke-primary"
-              width="6"
-              height="10"
-              viewBox="0 0 6 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div class="">
-          <img
-            class="sm:h-64 mx-auto"
-            src="../../assets/images/design.svg"
-            alt="3D Design"
-          />
+              Xem thêm
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -149,34 +48,22 @@ export default {
     return {
       services: [
         {
-          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
-          title: "Adversiting",
-          description: "Description...",
+          src: "src/assets/images/event.svg",
+          title: "EVENTS",
+          description:
+            "Với hơn 10 năm kinh nghiệm tổ chức thành công nhiều chương trình, dự án trong và ngoài nước, Blue Agency tự hào là sự lựa chọn đúng đắn, người đồng hành tin cậy tạo nên những sự kiện chuyên nghiệp, nâng tầm thương hiệu cho doanh nghiệp đối tác.",
         },
         {
-          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
-          title: "Entertainment",
-          description: "Description...",
+          src: "src/assets/images/media.svg",
+          title: "MEDIA",
+          description:
+            'Với triết lý "Mang đến sản phẩm tốt nhất cho khách hàng". Chúng tôi luôn đầu tư nhiều trang thiết bị hiện đại, đội ngũ nhân sự hàng đầu trong ngành sản xuất phim ảnh, nhằm mang lại cho khách hàng những sản phẩm (video/hình ảnh) ấn tượng và độc đáo. Qua đó góp phần cho sự thắng lợi trong các chiến dịch Marketing',
         },
         {
-          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
-          title: "Activation",
-          description: "Description...",
-        },
-        {
-          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
-          title: "Media",
-          description: "Description...",
-        },
-        {
-          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
-          title: "Opening",
-          description: "Description...",
-        },
-        {
-          src: "https://booking.webestica.com/landing/assets/images/demos/05.jpg",
-          title: "Road Show",
-          description: "Description...",
+          src: "src/assets/images/design.svg",
+          title: "3D DESIGN",
+          description:
+            "Với hơn 10 năm kinh nghiệm tổ chức thành công nhiều chương trình, dự án trong và ngoài nước, Blue Agency tự hào là sự lựa chọn đúng đắn, người đồng hành tin cậy tạo nên những sự kiện chuyên nghiệp, nâng tầm thương hiệu cho doanh nghiệp đối tác.",
         },
       ],
     };
