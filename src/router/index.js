@@ -1,13 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import SericeView from "../views/SericeView.vue";
-import Service from "../components/home/Service.vue";
-import Adversiting from "../components/service/Adversiting.vue";
-import Media from "../components/service/Media.vue";
-import Activation from "../components/service/Activation.vue";
-import Entertainment from "../components/service/Entertainment.vue";
-import RoadShow from "../components/service/RoadShow.vue";
-import Opening from "../components/service/Opening.vue";
+import SericesView from "../views/ServicesView.vue";
+import Services from "../components/home/NewService.vue";
+import Media from "@/components/services/Media.vue";
+import Events from "@/components/services/Events.vue";
+import Design from "@/components/services/Design.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,48 +14,28 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/service",
-      component: SericeView,
+      path: "/services",
+      component: SericesView,
       children: [
         {
           path: "",
-          component: Service,
+          component: Services,
         },
         {
-          path: "adversiting",
-          component: Adversiting,
+          path: "events",
+          component: Events,
         },
         {
           path: "media",
           component: Media,
         },
         {
-          path: "activation",
-          component: Activation,
-        },
-        {
-          path: "entertainment",
-          component: Entertainment,
-        },
-        {
-          path: "roadshow",
-          component: RoadShow,
-        },
-        {
-          path: "opening",
-          component: Opening,
+          path: "design",
+          component: Design,
         },
       ],
     },
   ],
-});
-
-router.beforeEach(async (to, from) => {
-  // const isAuthenticated = await authService.isAuthenticated();
-  // if (!isAuthenticated && to.name !== "login") {
-  //   await authService.logout();
-  //   return { name: "login" };
-  // }
 });
 
 export default router;

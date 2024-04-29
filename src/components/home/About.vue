@@ -6,19 +6,16 @@ export default {
     return {
       about: [
         {
-          title: "TẦM NHÌN",
-          description:
-            "Blue Agency cung cấp dịch vụ sự kiện chuyên nghiệp, đáp ứng yêu cầu cao nhất, khó nhất của khách hàng",
+          title: "about.subtitle1",
+          description: "about.dessubtitle1",
         },
         {
-          title: "SỨ MỆNH",
-          description:
-            "Blue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệtBlue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệt",
+          title: "about.subtitle2",
+          description: "about.dessubtitle2",
         },
         {
-          title: "GIÁ TRỊ CỐT LÕI",
-          description:
-            "Blue Agency xây dựng những giá trị vững chắc từ nội tại “Sáng tạo – Trách nhiệm – Trung thực – Hiệu quả”",
+          title: "about.subtitle3",
+          description: "about.dessubtitle3",
         },
       ],
     };
@@ -47,24 +44,17 @@ export default {
       <div class="pt-6 flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
           <h3 class="text-3xl text-primary font-medium leading-none mb-3">
-            Đôi nét về chúng tôi
+            {{ $t("about.title") }}
           </h3>
           <ul class="text-gray-600 mb-8">
             <li class="py-2">
-              BlueAgency – Events & Media là doanh nghiệp hoạt động chính trong
-              các lĩnh vực tổ chức sự kiện, cung cấp thiết bị - nhân sự sự kiện
-              và sản xuất hình ảnh.
+              {{ $t("about.description1") }}
             </li>
             <li class="py-2">
-              Chúng tôi luôn sẵn sàng đáp ứng được những yêu cầu, ý tưởng mới
-              lạ, độc đáo của khách hàng. Với phương châm “Sáng tạo không giới
-              hạn” BlueAgency sẵn sàng tạo ra sự đột phá về phong cách tổ chức
-              sự kiện cũng như các sản phẩm chúng tôi cung cấp.
+              {{ $t("about.description2") }}
             </li>
             <li class="pt-2">
-              Với những kinh nghiệm đã tích lũy trong lĩnh vực tổ chức sự kiện
-              và truyền thông, BlueAgency – Events & Media tự tin sẽ đem lại sự
-              hài lòng cho Quý khách.
+              {{ $t("about.description3") }}
             </li>
           </ul>
         </div>
@@ -89,10 +79,10 @@ export default {
           >
             <h6 class="flex-none mb-2">
               <span class="font-bold text-xl text-primary">{{
-                item.title
+                $t(item.title).toUpperCase()
               }}</span>
             </h6>
-            <small class="flex-1 text-sm">{{ item.description }}</small>
+            <small class="flex-1 text-sm">{{ $t(item.description) }}</small>
           </div>
         </div>
       </div>
@@ -114,7 +104,7 @@ export default {
           class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
         >
           <h3 class="text-3xl text-primary font-bold leading-none mb-3">
-            Quy trình làm việc
+            {{ $t("about.workingprocess") }}
           </h3>
         </div>
         <div class="grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3">
@@ -127,16 +117,18 @@ export default {
               >
                 1
               </p>
-              <p class="text-lg font-bold leading-5">Trước khi ký hợp đồng</p>
+              <p class="text-lg font-bold leading-5">
+                {{ $t("about.titleprocess1") }}
+              </p>
             </div>
             <div class="text-sm text-gray-900">
               <ul class="list-disc px-6 py-2">
-                <li>Nhận yêu cầu từ khách hàng</li>
-                <li>Phân tích, trao đổi, gặp mặt làm rõ nhu cầu</li>
-                <li>Xác nhận thông tin về yêu cầu của khách hàng</li>
-                <li>Lập kế hoạch sơ bộ, gửi dự toán</li>
-                <li>Khách hàng duyệt kế hoạch</li>
-                <li>Hoàn thiện báo giá</li>
+                <li>{{ $t("about.detailprocess11") }}</li>
+                <li>{{ $t("about.detailprocess12") }}</li>
+                <li>{{ $t("about.detailprocess13") }}</li>
+                <li>{{ $t("about.detailprocess14") }}</li>
+                <li>{{ $t("about.detailprocess15") }}</li>
+                <li>{{ $t("about.detailprocess16") }}</li>
               </ul>
             </div>
           </div>
@@ -149,14 +141,16 @@ export default {
               >
                 2
               </p>
-              <p class="text-lg font-bold leading-5">Ký hợp đồng</p>
+              <p class="text-lg font-bold leading-5">
+                {{ $t("about.titleprocess2") }}
+              </p>
             </div>
             <div class="text-sm text-gray-900">
               <ul class="list-disc px-6 py-2">
-                <li>Trao đổi, thống nhất điều khoản hợp đồng</li>
-                <li>Hoàn thiện hợp đồng, phụ lục</li>
-                <li>Ký hợp đồng</li>
-                <li>Thanh toán đợt 1</li>
+                <li>{{ $t("about.detailprocess21") }}</li>
+                <li>{{ $t("about.detailprocess22") }}</li>
+                <li>{{ $t("about.detailprocess23") }}</li>
+                <li>{{ $t("about.detailprocess24") }}</li>
               </ul>
             </div>
           </div>
@@ -169,16 +163,18 @@ export default {
               >
                 3
               </p>
-              <p class="text-lg font-bold leading-5">Sau khi ký hợp đồng</p>
+              <p class="text-lg font-bold leading-5">
+                {{ $t("about.titleprocess3") }}
+              </p>
             </div>
             <div class="text-sm text-gray-900">
               <ul class="list-disc px-6 py-2">
-                <li>Triển khai và thực hiện theo hợp đồng</li>
-                <li>Điều chỉnh phát sinh (nếu có)</li>
-                <li>Bàn giao sản phẩm trong quá trình thực hiện</li>
-                <li>Nghiệm thu</li>
-                <li>Thanh toán đợt 2</li>
-                <li>Thanh lí hợp đồng</li>
+                <li>{{ $t("about.detailprocess31") }}</li>
+                <li>{{ $t("about.detailprocess32") }}</li>
+                <li>{{ $t("about.detailprocess33") }}</li>
+                <li>{{ $t("about.detailprocess34") }}</li>
+                <li>{{ $t("about.detailprocess35") }}</li>
+                <li>{{ $t("about.detailprocess36") }}</li>
               </ul>
             </div>
             <p

@@ -46,7 +46,7 @@ const props = defineProps(["titles"]);
             />
           </svg>
           <router-link
-            :to="'/service'"
+            :to="'/services'"
             class="ms-1 text-md font-medium text-gray-700 hover:text-primary md:ms-2"
           >
             {{ $t("nav.service") }}

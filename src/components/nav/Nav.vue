@@ -22,26 +22,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <button
-          id="nav-toggle"
-          class="flex items-center p-1 text-gray-200 hover:text-primary focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </button> -->
       </div>
       <div
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20"

@@ -12,19 +12,54 @@
   },
   "about": {
     "header": "Giới thiệu",
-    "description": "Với tiêu chí nhiệt tình và luôn sáng tạo trong công việc. Hy vọng quý khách hàng sẽ có những trải nghiệm khác biệt và tuyệt vời khi đến với chúng tôi."
+    "title": "Đôi nét về chúng tôi",
+    "description1": "BlueAgency – Events & Media là doanh nghiệp hoạt động chính trong các lĩnh vực tổ chức sự kiện, cung cấp thiết bị - nhân sự sự kiện và sản xuất hình ảnh.",
+    "description2": "Chúng tôi luôn sẵn sàng đáp ứng được những yêu cầu, ý tưởng mới lạ, độc đáo của khách hàng. Với phương châm “Sáng tạo không giới hạn” BlueAgency sẵn sàng tạo ra sự đột phá về phong cách tổ chức sự kiện cũng như các sản phẩm chúng tôi cung cấp.",
+    "description3": "Với những kinh nghiệm đã tích lũy trong lĩnh vực tổ chức sự kiện và truyền thông, BlueAgency – Events & Media tự tin sẽ đem lại sự hài lòng cho quý khách.",
+    "subtitle1": "Tầm nhìn",
+    "dessubtitle1": "Blue Agency cung cấp dịch vụ sự kiện chuyên nghiệp, đáp ứng yêu cầu cao nhất, khó nhất của khách hàng",
+    "subtitle2": "Sứ mệnh",
+    "dessubtitle2": "Blue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệtBlue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệt",
+    "subtitle3": "Giá trị cốt lõi",
+    "dessubtitle3": "Blue Agency xây dựng những giá trị vững chắc từ nội tại “Sáng tạo – Trách nhiệm – Trung thực – Hiệu quả",
+    "workingprocess": "Quy trình làm việc",
+    "titleprocess1": "Trước khi ký hợp đồng",
+    "detailprocess11": "Nhận yêu cầu từ khách hàng",
+    "detailprocess12": "Phân tích, trao đổi, gặp mặt làm rõ nhu cầu",
+    "detailprocess13": "Xác nhận thông tin về yêu cầu của khách hàng",
+    "detailprocess14": "Lập kế hoạch sơ bộ, gửi dự toán",
+    "detailprocess15": "Khách hàng duyệt kế hoạch",
+    "detailprocess16": "Hoàn thiện báo giá",
+    "titleprocess2": "Ký hợp đồng",
+    "detailprocess21": "Trao đổi, thống nhất điều khoản hợp đồng",
+    "detailprocess22": "Hoàn thiện hợp đồng, phụ lục",
+    "detailprocess23": "Ký hợp đồng",
+    "detailprocess24": "Thanh toán đợt 1",
+    "titleprocess3": "Sau khi ký hợp đồng",
+    "detailprocess31": "Triển khai và thực hiện theo hợp đồng",
+    "detailprocess32": "Điều chỉnh phát sinh (nếu có)",
+    "detailprocess33": "Bàn giao sản phẩm trong quá trình thực hiện",
+    "detailprocess34": "Nghiệm thu",
+    "detailprocess35": "Thanh toán đợt 2",
+    "detailprocess36": "Thanh lí hợp đồng"
   },
-  "service": {
+  "services": {
     "header": "Dịch vụ",
-    "description": "",
     "items": {
-      "adversiting": "Quảng cáo",
-      "entertainment": "Giải trí",
-      "activation": "Quang bá thương hiệu",
-      "media": "Truyền thông",
-      "opening": "Khai trương",
-      "roadshow": "Quảng cáo trên đường phố"
-    }
+      "events": {
+        "title": "Sự kiện",
+        "description": "Với hơn 10 năm kinh nghiệm tổ chức thành công nhiều chương trình, dự án trong và ngoài nước, Blue Agency tự hào là sự lựa chọn đúng đắn, người đồng hành tin cậy tạo nên những sự kiện chuyên nghiệp, nâng tầm thương hiệu cho doanh nghiệp đối tác."
+      },
+      "media": {
+        "title": "Video & hình ảnh",
+        "description": "Với triết lý 'Mang đến sản phẩm tốt nhất cho khách hàng'. Chúng tôi luôn đầu tư nhiều trang thiết bị hiện đại, đội ngũ nhân sự hàng đầu trong ngành sản xuất phim ảnh, nhằm mang lại cho khách hàng những sản phẩm (video/hình ảnh) ấn tượng và độc đáo. Qua đó góp phần cho sự thắng lợi trong các chiến dịch Marketing."
+      },
+      "design": {
+        "title": "Thiết kế",
+        "description": "Thiết kế sự kiện là các hoạt động liên quan đến việc thiết kế, tổ chức thực hiện sự kiện. Việc lên kế hoạch chủ đề, xây dựng và triển khai sự kiện giúp thu hút nhiều người tham gia, biết đến thương hiệu, sản phẩm và dịch vụ theo mục đích của người muốn tổ chức sự kiện."
+      }
+    },
+    "readmore": "Xem thêm"
   },
   "client": {
     "header": "Khách hàng",

@@ -1,7 +1,7 @@
 <script setup>
 import Cover from "../components/home/Cover.vue";
 import About from "../components/home/About.vue";
-import Service from "../components/home/Service.vue";
+import Service from "../components/home/Services.vue";
 import Client from "../components/home/Client.vue";
 import Contact from "../components/home/Contact.vue";
 import NewService from "../components/home/NewService.vue";

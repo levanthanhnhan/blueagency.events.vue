@@ -10,12 +10,12 @@ import { CheckIcon, ChevronUpDownIcon } from "@heroicons/vue/20/solid";
 
 const languages = [
   {
-    name: "en",
-    nationality: "gb",
-  },
-  {
     name: "vi",
     nationality: "vn",
+  },
+  {
+    name: "en",
+    nationality: "gb",
   },
 ];
 
