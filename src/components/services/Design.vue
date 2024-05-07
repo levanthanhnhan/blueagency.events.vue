@@ -4,7 +4,7 @@ import Breadcrumb from "../nav/Breadcrumb.vue";
 
 <template>
   <div
-    class="pt-12 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl mb-5"
+    class="pt-20 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl mb-5"
   >
     <Breadcrumb :titles="breadcrumbs"></Breadcrumb>
   </div>
