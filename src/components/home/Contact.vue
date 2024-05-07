@@ -24,8 +24,7 @@
                   :placeholder="$t('contact.form.name')"
                   required
                   type="text"
-                  name="txtMailName"
-                  id="txtMailName"
+                  name="name"
                   class="block w-full mx-auto rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 />
               </div>
@@ -35,8 +34,7 @@
                   :placeholder="$t('contact.form.email')"
                   required
                   type="text"
-                  name="txtMailFrom"
-                  id="txtMailFrom"
+                  name="email"
                   class="block w-full mx-auto rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 />
               </div>
@@ -45,8 +43,7 @@
                   v-model="feedback.subject"
                   :placeholder="$t('contact.form.subject')"
                   type="text"
-                  name="txtMailSubject"
-                  id="txtMailSubject"
+                  name="subject"
                   class="block w-full mx-auto rounded-md border-0 px-2 py-2 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
                 />
               </div>
@@ -55,8 +52,7 @@
               <div class="contact-form-col-right mt-2">
                 <textarea
                   v-model="feedback.message"
-                  id="txtMailBody"
-                  name="txtMailBody"
+                  name="message"
                   cols="40"
                   rows="3"
                   aria-invalid="false"
@@ -65,11 +61,6 @@
                 ></textarea>
               </div>
               <div class="contact-form-col-right mt-2">
-                <!-- <input
-                  :value="$t('contact.form.submit')"
-                  type="submit"
-                  class="block w-full mx-auto rounded-md border-0 px-2 py-2 bg-primary transition-all hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-white"
-                /> -->
                 <button
                   id="btnSubmit"
                   :disabled="sending"
@@ -178,7 +169,7 @@ export default {
         .sendFeedback(this.feedback)
         .then((result) => {
           this.sending = false;
-          if (result == "0") {
+          if (result.data == "0") {
             this.sendMailSuccess();
           } else {
             this.sendMailFailed();
