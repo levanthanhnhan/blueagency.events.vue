@@ -4,7 +4,7 @@ import Breadcrumb from "../nav/Breadcrumb.vue";
 
 <template>
   <div
-    class="pt-20 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl mb-5"
+    class="pt-12 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl mb-5"
   >
     <Breadcrumb :titles="breadcrumbs"></Breadcrumb>
   </div>
@@ -29,12 +29,12 @@ import Breadcrumb from "../nav/Breadcrumb.vue";
           <p
             class="inline-block px-3 py-3 mb-2 text-xs font-bold tracking-wider text-teal-900 uppercase rounded-full bg-[#20EBB9]"
           >
-            {{ item.header }}
+            {{ $t(item.header).toUpperCase() }}
           </p>
         </div>
       </div>
       <div class="grid gap-2">
-        <div v-for="src in item.src" v-bind:key="src.title">
+        <div v-for="src in item.src" v-bind:key="src.src">
           <img class="mx-auto design-scroll-reveal" :src="src" :alt="src" />
         </div>
       </div>
@@ -44,6 +44,10 @@ import Breadcrumb from "../nav/Breadcrumb.vue";
 
 <script>
 import ScrollReveal from "scrollreveal";
+import design1 from "@/assets/images/design-1.png";
+import design2 from "@/assets/images/design-2.png";
+import design3 from "@/assets/images/design-3.png";
+import design4 from "@/assets/images/design-4.png";
 
 export default {
   data() {
@@ -52,23 +56,16 @@ export default {
       breadcrumbs: "services.items.design.title",
       services: [
         {
-          header: "3D DESIGN",
-          src: [
-            "https://res.cloudinary.com/dss6pknik/image/upload/v1714384348/services/design/keiaypgyk06yh9urndtu.png",
-            "https://res.cloudinary.com/dss6pknik/image/upload/v1714384348/services/design/npvpsfaip2otszdooizm.png",
-          ],
+          header: "services.items.design.content1.header",
+          src: [design1, design2],
         },
         {
-          header: "BOOT DESIGN",
-          src: [
-            "https://res.cloudinary.com/dss6pknik/image/upload/v1714384348/services/design/ultujilkghkzjiqbjudv.png",
-          ],
+          header: "services.items.design.content2.header",
+          src: [design3],
         },
         {
-          header: "SOCIAL DESIGN",
-          src: [
-            "https://res.cloudinary.com/dss6pknik/image/upload/v1714384348/services/design/l5syuqzjeeosyay5gmhv.png",
-          ],
+          header: "services.items.design.content3.header",
+          src: [design4],
         },
       ],
     };

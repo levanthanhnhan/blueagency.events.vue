@@ -1,5 +1,5 @@
 <template>
-  <section id="client" class="bg-white pt-8 lg:pt-20 text-gray-900">
+  <section id="client" class="bg-white pt-16 text-gray-900">
     <div class="container mx-auto flex flex-wrap">
       <h2
         class="w-full py-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase clients"

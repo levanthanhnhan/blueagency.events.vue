@@ -2,7 +2,7 @@
   <section id="cover" class="relative px-0 py-0">
     <video
       class="w-full mx-auto h-screen object-cover"
-      src="../../../src/assets/data/cover.mp4"
+      src="../../assets/data/cover.mp4"
       autoplay
       loop
       playsinline

@@ -17,11 +17,11 @@
     "description2": "Chúng tôi luôn sẵn sàng đáp ứng được những yêu cầu, ý tưởng mới lạ, độc đáo của khách hàng. Với phương châm “Sáng tạo không giới hạn” BlueAgency sẵn sàng tạo ra sự đột phá về phong cách tổ chức sự kiện cũng như các sản phẩm chúng tôi cung cấp.",
     "description3": "Với những kinh nghiệm đã tích lũy trong lĩnh vực tổ chức sự kiện và truyền thông, BlueAgency – Events & Media tự tin sẽ đem lại sự hài lòng cho quý khách.",
     "subtitle1": "Tầm nhìn",
-    "dessubtitle1": "Blue Agency cung cấp dịch vụ sự kiện chuyên nghiệp, đáp ứng yêu cầu cao nhất, khó nhất của khách hàng",
+    "dessubtitle1": "Blue Agency cung cấp dịch vụ sự kiện chuyên nghiệp, đáp ứng yêu cầu cao nhất, khó nhất của khách hàng.",
     "subtitle2": "Sứ mệnh",
-    "dessubtitle2": "Blue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệtBlue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệt",
+    "dessubtitle2": "Blue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệt”.",
     "subtitle3": "Giá trị cốt lõi",
-    "dessubtitle3": "Blue Agency xây dựng những giá trị vững chắc từ nội tại “Sáng tạo – Trách nhiệm – Trung thực – Hiệu quả",
+    "dessubtitle3": "Blue Agency xây dựng những giá trị vững chắc từ nội tại “Sáng tạo – Trách nhiệm – Trung thực – Hiệu quả”.",
     "workingprocess": "Quy trình làm việc",
     "titleprocess1": "Trước khi ký hợp đồng",
     "detailprocess11": "Nhận yêu cầu từ khách hàng",
@@ -48,15 +48,80 @@
     "items": {
       "events": {
         "title": "Sự kiện",
-        "description": "Với hơn 10 năm kinh nghiệm tổ chức thành công nhiều chương trình, dự án trong và ngoài nước, Blue Agency tự hào là sự lựa chọn đúng đắn, người đồng hành tin cậy tạo nên những sự kiện chuyên nghiệp, nâng tầm thương hiệu cho doanh nghiệp đối tác."
+        "description": "Với hơn 10 năm kinh nghiệm tổ chức thành công nhiều chương trình, dự án trong và ngoài nước, Blue Agency tự hào là sự lựa chọn đúng đắn, người đồng hành tin cậy tạo nên những sự kiện chuyên nghiệp, nâng tầm thương hiệu cho doanh nghiệp đối tác.",
+        "content1": {
+          "header": "Tổ chức sự kiện",
+          "title": "Trung Quân and Friends - Trót Yêu tại Huế & Đà Nẵng 2019",
+          "description": "Đêm liveshow đầu tiên trong sự nghiệp mang tên Trót Yêu của Trung Quân đã khiến hàng nghìn khán giả vỡ òa trong cảm xúc. Không chỉ mang đến những ca khúc hit gắn liền với tên tuổi của mình, Trung Quân và những người bạn Ái Phương, Khổng Tú Quỳnh, Đào Bá Lộc, Đạt G, Hoàng Tôn, Hằng Bingboong, Phương Anh Idol, Huỳnh Tú còn chia sẻ nhiều câu chuyện thú vị về tình bạn của họ."
+        },
+        "content2": {
+          "header": "Tổ chức sự kiện",
+          "title": "Họp mặt CLB VIPHAVET PLATINUM lần thứ 11",
+          "description": "Họp mặt CLB Viphavet Platinum là sự kiện được Viphavet tổ chức hai lần một năm bắt đầu từ năm 2014 và chỉ dành riêng cho các nhà phân phối hàng đầu của công ty. Sự kiện cũng như là món quà tri ân mà Viphavet dành tặng cho quý khách hàng đã đồng hành cùng chúng tôi trong suốt thời gian qua. Ngoài việc cung cấp những kiến thức mới, những chương trình tập huấn kỹ năng mềm, đặc biệt là những chương trình khuyến mãi cực kỳ hấp dẫn chỉ dành riêng cho quý hội viên, Viphavet Platinum còn là nơi để quý khách có thể gặp gỡ, giao lưu và tận hưởng kỳ nghỉ tại các khách sạn, khu nghỉ dưỡng cao cấp."
+        },
+        "content3": {
+          "header": "Tổ chức sự kiện",
+          "title": "Cynosure Apac Summit 2023 tại Singapore",
+          "description": "Cynosure Apac Summit 2023 tại Singapore là chuỗi Event mà BlueAgency - Events & Media rất may mắn khi được góp một phần công sức từ các khâu lên ý tưởng đến sản xuất thiết kế và thi công."
+        },
+        "content4": {
+          "header": "Tổ chức sự kiện",
+          "title": "Khai trương",
+          "description": "Khai trương là một trong những sự kiện quan trọng và không thể thiếu của mỗi doanh nghiệp. Tổ chức lễ khai trương mang ý nghĩa tích cực, đánh dấu sự khởi đầu may mắn và thành công của doanh nghiệp về sau này. Ngoài ra, sự kiện khai trương còn mang yếu tố truyền thông mạnh mẽ, giúp doanh nghiệp có thể tiếp cận khách hàng một cách nhanh nhất và giới thiệu, quảng bá sản phẩm, tìm kiếm các khách hàng tiềm năng. Chính những ý nghĩa đó mà việc tổ chức lễ khai trương ngày càng được nhiều doanh nghiệp lựa chọn đầu tư bài bản, chi tiết nhằm giới thiệu hình ảnh công ty và khẳng định vị thế của doanh nghiệp."
+        },
+        "content5": {
+          "header": "Tổ chức sự kiện",
+          "title": "Hội thảo",
+          "description": "Hội thảo là sự kiện của doanh nghiệp được tổ chức thường niên với mục đích duy trì mối quan hệ khách hàng hiện tại và thu hút các khách hàng tiềm năng. Các hoạt động chính trong hội thảo là thảo luận về một vấn đề thực tiễn; đối thoại, thăm dò ý kiến khách hàng hoặc chia sẻ kiến thức về ngành nghề. Tổ chức hội thảo sẽ là cơ hội để doanh nghiệp gặp gỡ, giao lưu với các đối tác; tăng cường mối quan hệ với cơ quan truyền thông và nâng cao hình ảnh của công ty."
+        },
+        "content6": {
+          "header": "Tổ chức sự kiện",
+          "title": "Sản xuất và cho thuê thiết bị sự kiện",
+          "description": "Chúng tôi chuyên cung cấp dịch vụ cho thuê thiết bị sự kiện trọn gói. Với nhiều năm kinh nghiệm cùng tôn chỉ 'Chuyên nghiệp - Tận tình - Sáng tạo'."
+        },
+        "content7": {
+          "header": "Roadshow",
+          "title": "",
+          "description": "Trong marketing hiện đại, chạy roadshow là một trong những phương thức truyền thông quen thuộc, được nhiều nhãn hàng triển khai trong nhiều chiến dịch quảng bá thương hiệu, sản phẩm, dịch vụ hoặc các sự kiện đặc biệt."
+        }
       },
       "media": {
         "title": "Video & hình ảnh",
-        "description": "Với triết lý 'Mang đến sản phẩm tốt nhất cho khách hàng'. Chúng tôi luôn đầu tư nhiều trang thiết bị hiện đại, đội ngũ nhân sự hàng đầu trong ngành sản xuất phim ảnh, nhằm mang lại cho khách hàng những sản phẩm (video/hình ảnh) ấn tượng và độc đáo. Qua đó góp phần cho sự thắng lợi trong các chiến dịch Marketing."
+        "description": "Với triết lý “Mang đến sản phẩm tốt nhất cho khách hàng”. Chúng tôi luôn đầu tư nhiều trang thiết bị hiện đại, đội ngũ nhân sự hàng đầu trong ngành sản xuất phim ảnh, nhằm mang lại cho khách hàng những sản phẩm (video/hình ảnh) ấn tượng và độc đáo. Qua đó góp phần cho sự thắng lợi trong các chiến dịch marketing.",
+        "content1": {
+          "header": "Sản xuất hình ảnh",
+          "title": "Sản xuất hình ảnh doanh nghiệp & sản phẩm",
+          "description": "Với kinh nghiệm về sản xuất hình ảnh, chụp hình sản phẩm với nhiều ngành hàng, lĩnh vực khác nhau để đưa ra những lời tư vấn tốt nhất và phù hợp nhất với thương hiệu của bạn."
+        },
+        "content2": {
+          "header": "Sản xuất hình ảnh",
+          "title": "Sản xuất hình ảnh sự kiện",
+          "description": "Với đội ngũ ekip chuyên nghiệp & sáng tạo, chúng tôi sẽ tư vấn và thực hiện các video sự kiện với mọi quy mô ngân sách khác nhau, đảm bảo chất lượng hình ảnh tốt nhất, ghi lại những khoảnh khắc ấn tượng tại sự kiện của doanh nghiệp."
+        },
+        "content3": {
+          "header": "Sản xuất video",
+          "title": "Sản xuất video marketing",
+          "description": "Chúng tôi chuyên cung cấp dịch vụ sản xuất video marketing chuyên nghiệp cho doanh nghiệp, giúp xây dựng ý tưởng kịch bản, quay phim tiền kỳ, dựng phim hậu kỳ, phát hành video đạt hiệu quả tối ưu nhất."
+        }
       },
       "design": {
         "title": "Thiết kế",
-        "description": "Thiết kế sự kiện là các hoạt động liên quan đến việc thiết kế, tổ chức thực hiện sự kiện. Việc lên kế hoạch chủ đề, xây dựng và triển khai sự kiện giúp thu hút nhiều người tham gia, biết đến thương hiệu, sản phẩm và dịch vụ theo mục đích của người muốn tổ chức sự kiện."
+        "description": "Thiết kế sự kiện là các hoạt động liên quan đến việc thiết kế, tổ chức thực hiện sự kiện. Việc lên kế hoạch chủ đề, xây dựng và triển khai sự kiện giúp thu hút nhiều người tham gia, biết đến thương hiệu, sản phẩm và dịch vụ theo mục đích của người muốn tổ chức sự kiện.",
+        "content1": {
+          "header": "Thiết kế 3D",
+          "title": "",
+          "description": ""
+        },
+        "content2": {
+          "header": "Thiết kế BOOTH",
+          "title": "",
+          "description": ""
+        },
+        "content3": {
+          "header": "Thiết kế nội dung truyền thông và quảng cáo",
+          "title": "",
+          "description": ""
+        }
       }
     },
     "readmore": "Xem thêm"
@@ -73,7 +138,16 @@
       "email": "Email (Không để trống)",
       "subject": "Tiêu đề",
       "message": "Nội dung",
-      "submit": "Gửi"
+      "submit": "Gửi",
+      "submitting": "Đang gửi"
+    },
+    "messageError": {
+      "header": "Xin lỗi!",
+      "title": "Hệ thống đang bận. Vui lòng thử lại sau! "
+    },
+    "messageSuccess": {
+      "header": "Cảm ơn!",
+      "title": "Phản hồi của bạn đã được gửi thành công!"
     }
   },
   "footer": {

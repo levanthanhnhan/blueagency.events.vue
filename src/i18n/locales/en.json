@@ -12,51 +12,116 @@
   },
   "about": {
     "header": "About",
-    "title": "Đôi nét về chúng tôi",
-    "description1": "BlueAgency – Events & Media là doanh nghiệp hoạt động chính trong các lĩnh vực tổ chức sự kiện, cung cấp thiết bị - nhân sự sự kiện và sản xuất hình ảnh.",
-    "description2": "Chúng tôi luôn sẵn sàng đáp ứng được những yêu cầu, ý tưởng mới lạ, độc đáo của khách hàng. Với phương châm “Sáng tạo không giới hạn” BlueAgency sẵn sàng tạo ra sự đột phá về phong cách tổ chức sự kiện cũng như các sản phẩm chúng tôi cung cấp.",
-    "description3": "Với những kinh nghiệm đã tích lũy trong lĩnh vực tổ chức sự kiện và truyền thông, BlueAgency – Events & Media tự tin sẽ đem lại sự hài lòng cho quý khách.",
-    "subtitle1": "Tầm nhìn",
-    "dessubtitle1": "Blue Agency cung cấp dịch vụ sự kiện chuyên nghiệp, đáp ứng yêu cầu cao nhất, khó nhất của khách hàng",
-    "subtitle2": "Sứ mệnh",
-    "dessubtitle2": "Blue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệtBlue Agency không ngừng tích lũy, trau dồi kinh nghiệm chuyên môn, mang đến khách hàng sự “Tận tâm – Chu đáo – Khác biệt",
-    "subtitle3": "Giá trị cốt lõi",
-    "dessubtitle3": "Blue Agency xây dựng những giá trị vững chắc từ nội tại “Sáng tạo – Trách nhiệm – Trung thực – Hiệu quả",
-    "workingprocess": "Quy trình làm việc",
-    "titleprocess1": "Trước khi ký hợp đồng",
-    "detailprocess11": "Nhận yêu cầu từ khách hàng",
-    "detailprocess12": "Phân tích, trao đổi, gặp mặt làm rõ nhu cầu",
-    "detailprocess13": "Xác nhận thông tin về yêu cầu của khách hàng",
-    "detailprocess14": "Lập kế hoạch sơ bộ, gửi dự toán",
-    "detailprocess15": "Khách hàng duyệt kế hoạch",
-    "detailprocess16": "Hoàn thiện báo giá",
-    "titleprocess2": "Ký hợp đồng",
-    "detailprocess21": "Trao đổi, thống nhất điều khoản hợp đồng",
-    "detailprocess22": "Hoàn thiện hợp đồng, phụ lục",
-    "detailprocess23": "Ký hợp đồng",
-    "detailprocess24": "Thanh toán đợt 1",
-    "titleprocess3": "Sau khi ký hợp đồng",
-    "detailprocess31": "Triển khai và thực hiện theo hợp đồng",
-    "detailprocess32": "Điều chỉnh phát sinh (nếu có)",
-    "detailprocess33": "Bàn giao sản phẩm trong quá trình thực hiện",
-    "detailprocess34": "Nghiệm thu",
-    "detailprocess35": "Thanh toán đợt 2",
-    "detailprocess36": "Thanh lí hợp đồng"
+    "title": "Introduction",
+    "description1": "BlueAgency – Events & Media is a business operating mainly in the fields of event organization, providing event equipment - personnel and image production.",
+    "description2": "We are always ready to meet customers' new and unique requests. With the motto “Unlimited creativity”, BlueAgency is ready to create a breakthrough in the event organization style as well as the products we provide.",
+    "description3": "With accumulated experience in the field of event organization and  communication, BlueAgency - Events & Media is confident that it will bring satisfaction to you.",
+    "subtitle1": "Vision",
+    "dessubtitle1": "Blue Agency provides professional event services, meeting the highest and most difficult requirements of customers.",
+    "subtitle2": "Mission",
+    "dessubtitle2": "Blue agency constantly accumulates and cultivates professional experience, bringing customers “Devotion - Thoughtfulness - Distinctive”.",
+    "subtitle3": "Core Values",
+    "dessubtitle3": "Blue Agency builds solid values from within “Creativity - Responsibility - Honesty - Efficiency”.",
+    "workingprocess": "Workflow",
+    "titleprocess1": "Before signing the contract",
+    "detailprocess11": "Receive customer requests",
+    "detailprocess12": "Analyze and clarify needs",
+    "detailprocess13": "Confirm customer requirements",
+    "detailprocess14": "Create preliminary plans and estimates",
+    "detailprocess15": "Customer approves the plan",
+    "detailprocess16": "Finalizes the quotation",
+    "titleprocess2": "Signing the contract",
+    "detailprocess21": "Exchange, agree on contract terms",
+    "detailprocess22": "Finalize contract, annex",
+    "detailprocess23": "Sign the contract",
+    "detailprocess24": "Make the first payment",
+    "titleprocess3": "After signing the contract",
+    "detailprocess31": "Implement and carry out according to the contract",
+    "detailprocess32": "Adjust any arising issues (if any)",
+    "detailprocess33": "Hand over the product during the implementation process",
+    "detailprocess34": "Acceptance testing",
+    "detailprocess35": "Make the second payment",
+    "detailprocess36": "Contract termination"
   },
   "services": {
     "header": "Services",
     "items": {
       "events": {
         "title": "Events",
-        "description": "Với hơn 10 năm kinh nghiệm tổ chức thành công nhiều chương trình, dự án trong và ngoài nước, Blue Agency tự hào là sự lựa chọn đúng đắn, người đồng hành tin cậy tạo nên những sự kiện chuyên nghiệp, nâng tầm thương hiệu cho doanh nghiệp đối tác."
+        "description": "With over 10 years of experience successfully organizing numerous programs and projects both domestically and internationally, Blue Agency takes pride in being the right choice, a reliable companion in creating professional events that elevate the brand for our partner's businesses",
+        "content1": {
+          "header": "Event management",
+          "title": "Trung Quân and Friends – Trót Yêu in Hue & Da Nang 2019",
+          "description": "The first live show in his career titled “Trót Yêu” by Trung Quân has brought thousands of audience members to tears. Not only did he perform his iconic hit songs, but Trung Quân and his friends Ái Phương, Khổng Tú Quỳnh, Đào Bá Lộc, Đạt G, Hoàng Tôn, Hằng Bingboong, Phương Anh Idol, and Huỳnh Tú also shared many interesting stories about their friendship."
+        },
+        "content2": {
+          "header": "Event management",
+          "title": "The 11th VIPHAVET PLATINUM Club meeting",
+          "description": "The VIPHAVET Platinum Club meeting is an event organized by Viphavet twice a year starting from 2014 and exclusively reserved for the company's top distributors. The event serves as a token of appreciation from Viphavet to our esteemed customers who have accompanied us throughout this journey. In addition to providing new knowledge and soft skills training programs, particularly exclusive promotions for club members, VIPHAVET Platinum also serves as a platform for customers to meet, network, and enjoy vacations at luxury hotels and resorts."
+        },
+        "content3": {
+          "header": "Event management",
+          "title": "Cynosure Apac Summit 2023 in Singapore",
+          "description": "Cynosure Apac Summit 2023 in Singapore is an event series where Blue Agency - Events & Media was fortunate to contribute efforts from conceptualization to design and execution."
+        },
+        "content4": {
+          "header": "Event management",
+          "title": "Grand Opening",
+          "description": "The Grand Opening is one of the crucial and indispensable events for every business. Organizing an opening ceremony carries positive significance, marking the auspicious beginning and future success of the business. Additionally, the opening event serves as a powerful communication tool, enabling businesses to reach customers quickly and introduce and promote products, as well as seek potential customers. It is precisely because of these significances that organizing a Grand Opening is increasingly chosen by many businesses to invest in systematically and meticulously, aiming to introduce the company's image and assert its position in the market."
+        },
+        "content5": {
+          "header": "Event management",
+          "title": "Seminar",
+          "description": "A seminar is a corporate event held annually with the purpose of maintaining current customer relationships and attracting potential customers. Key activities in the seminar include discussions on practical issues, dialogue, customer opinion surveys, or sharing industry knowledge. Organizing a seminar provides an opportunity for businesses to meet and interact with partners, enhance relationships with the media, and improve the company's image."
+        },
+        "content6": {
+          "header": "Event management",
+          "title": "Production and rental services event equipment",
+          "description": "We specialize in providing full event equipment rental services. With many years of experience and the same principle “Professional - Dedicated - Creative”."
+        },
+        "content7": {
+          "header": "Roadshow",
+          "title": "",
+          "description": "In modern marketing, conducting roadshows is one of the familiar communication methods adopted by many brands in various promotional campaigns for brand awareness, products, services, or special events."
+        }
       },
       "media": {
         "title": "Media",
-        "description": "Với triết lý 'Mang đến sản phẩm tốt nhất cho khách hàng'. Chúng tôi luôn đầu tư nhiều trang thiết bị hiện đại, đội ngũ nhân sự hàng đầu trong ngành sản xuất phim ảnh, nhằm mang lại cho khách hàng những sản phẩm (video/hình ảnh) ấn tượng và độc đáo. Qua đó góp phần cho sự thắng lợi trong các chiến dịch Marketing."
+        "description": "With the philosophy of “Bringing the Best Products to Customers”, Blue Agency invests heavily in state-of-the-art equipment and a top-notch team in the film production industry, aiming to provide customers with impressive and unique advertising videos/images that contribute to the success of their marketing campaigns",
+        "content1": {
+          "header": "Image production",
+          "title": "Image production enterprise & products",
+          "description": "With experience in image production and product photography in many different industries and fields, we can provide the best and most suitable advice for your brand."
+        },
+        "content2": {
+          "header": "Image production",
+          "title": "Event image production",
+          "description": "With a professional & creative team, we will advise and execute event videos with all budget sizes, ensuring the best image quality, capturing impressive moments at the event. of business."
+        },
+        "content3": {
+          "header": "Video production",
+          "title": "Marketing video production",
+          "description": "We specialize in providing professional marketing video production services for businesses, helping to develop script ideas, pre-production filming, post-production editing, and video distribution for optimal effectiveness."
+        }
       },
       "design": {
         "title": "Design",
-        "description": "Thiết kế sự kiện là các hoạt động liên quan đến việc thiết kế, tổ chức thực hiện sự kiện. Việc lên kế hoạch chủ đề, xây dựng và triển khai sự kiện giúp thu hút nhiều người tham gia, biết đến thương hiệu, sản phẩm và dịch vụ theo mục đích của người muốn tổ chức sự kiện."
+        "description": "Event design encompasses activities related to designing, organizing, and executing events. Planning the theme, constructing, and implementing events help attract more participants, increase brand awareness, and promote products and services according to the organizer's objectives.",
+        "content1": {
+          "header": "3D DESIGN",
+          "title": "",
+          "description": ""
+        },
+        "content2": {
+          "header": "BOOTH DESIGN",
+          "title": "",
+          "description": ""
+        },
+        "content3": {
+          "header": "SOCIAL DESIGN",
+          "title": "",
+          "description": ""
+        }
       }
     },
     "readmore": "Read more"
@@ -73,7 +138,16 @@
       "email": "Email (required)",
       "subject": "Subject",
       "message": "Message",
-      "submit": "Submit"
+      "submit": "Submit",
+      "submitting": "Submitting"
+    },
+    "messageError": {
+      "header": "Sorry!",
+      "title": "Error submiting form. Please try again later!"
+    },
+    "messageSuccess": {
+      "header": "Thank you!",
+      "title": "Your feedback has been submitted successfully!"
     }
   },
   "footer": {

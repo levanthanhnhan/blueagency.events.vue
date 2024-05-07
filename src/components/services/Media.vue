@@ -4,7 +4,7 @@ import Breadcrumb from "../nav/Breadcrumb.vue";
 
 <template>
   <div
-    class="pt-20 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl mb-5"
+    class="pt-12 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl mb-5"
   >
     <Breadcrumb :titles="breadcrumbs"></Breadcrumb>
   </div>
@@ -29,7 +29,7 @@ import Breadcrumb from "../nav/Breadcrumb.vue";
           <p
             class="inline-block px-3 py-3 mb-2 text-xs font-bold tracking-wider text-teal-900 uppercase rounded-full bg-[#20EBB9]"
           >
-            {{ item.header }}
+            {{ $t(item.header).toUpperCase() }}
           </p>
         </div>
         <h2
@@ -37,16 +37,16 @@ import Breadcrumb from "../nav/Breadcrumb.vue";
         >
           <span class="relative inline-block">
             <span class="text-2xl font-medium leading-none">{{
-              item.title
+              $t(item.title)
             }}</span>
           </span>
         </h2>
         <p class="text-base text-gray-700 md:text-md">
-          {{ item.description }}
+          {{ $t(item.description) }}
         </p>
       </div>
       <div class="grid gap-2">
-        <div v-for="src in item.src" v-bind:key="src.title">
+        <div v-for="src in item.src" v-bind:key="src.src">
           <img class="mx-auto media-scroll-reveal" :src="src" :alt="src" />
         </div>
       </div>
@@ -56,6 +56,15 @@ import Breadcrumb from "../nav/Breadcrumb.vue";
 
 <script>
 import ScrollReveal from "scrollreveal";
+import media1 from "@/assets/images/media-1.png";
+import media2 from "@/assets/images/media-2.png";
+import media3 from "@/assets/images/media-3.png";
+import media4 from "@/assets/images/media-4.png";
+import media5 from "@/assets/images/media-5.png";
+import media6 from "@/assets/images/media-6.png";
+import media7 from "@/assets/images/media-7.png";
+import media8 from "@/assets/images/media-8.png";
+import media9 from "@/assets/images/media-9.png";
 
 export default {
   data() {
@@ -63,37 +72,22 @@ export default {
       breadcrumbs: "services.items.media.title",
       services: [
         {
-          header: "Sản xuất hình ảnh",
-          title: "Sản xuất hình ảnh doanh nghiệp & sản phẩm",
-          description:
-            "Với kinh nghiệm về sản xuất hình ảnh, chụp hình sản phẩm với nhiều ngành hàng, lĩnh vực khác nhau để đưa ra những lời tư vấn tốt nhất và phù hợp nhất với thương hiệu của bạn.",
-          src: [
-            "../src/assets/images/media-1.png",
-            "../src/assets/images/media-2.png",
-          ],
+          header: "services.items.media.content1.header",
+          title: "services.items.media.content1.title",
+          description: "services.items.media.content1.description",
+          src: [media1, media2],
         },
         {
-          header: "Sản xuất hình ảnh",
-          title: "Sản xuất hình ảnh sự kiện",
-          description:
-            "Với đội ngũ ekip chuyên nghiệp & sáng tạo, chúng tôi sẽ tư vấn và thực hiện các video sự kiện với mọi quy mô ngân sách khác nhau, đảm bảo chất lượng hình ảnh tốt nhất, ghi lại những khoảnh khắc ấn tượng tại sự kiện của doanh nghiệp.",
-          src: [
-            "../src/assets/images/media-6.png",
-            "../src/assets/images/media-7.png",
-            "../src/assets/images/media-8.png",
-            "../src/assets/images/media-9.png",
-          ],
+          header: "services.items.media.content2.header",
+          title: "services.items.media.content2.title",
+          description: "services.items.media.content2.description",
+          src: [media6, media7, media8, media9],
         },
         {
-          header: "Sản xuất video",
-          title: "Sản xuất video marketing",
-          description:
-            "Chúng tôi chuyên cung cấp dịch vụ sản xuất video marketing chuyên nghiệp cho doanh nghiệp, giúp xây dựng ý tưởng kịch bản, quay phim tiền kỳ, dựng phim hậu kỳ, phát hành video đạt hiệu quả tối ưu nhất.",
-          src: [
-            "../src/assets/images/media-3.png",
-            "../src/assets/images/media-4.png",
-            "../src/assets/images/media-5.png",
-          ],
+          header: "services.items.media.content3.header",
+          title: "services.items.media.content3.title",
+          description: "services.items.media.content3.description",
+          src: [media3, media4, media5],
         },
       ],
     };

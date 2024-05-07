@@ -1,5 +1,5 @@
 <template>
-  <section id="service" class="bg-white pt-8 lg:pt-20 text-gray-900">
+  <section id="service" class="bg-white pt-16 text-gray-900">
     <div class="container mx-auto flex flex-wrap">
       <h2
         class="mx-auto py-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase services"
@@ -30,7 +30,7 @@
                   .toLowerCase()}`"
                 class="flex flex-wrap flex-col px-6"
               >
-                <img class="h-60 mx-auto" :src="item.src" :alt="item.title" />
+                <img class="h-60 mx-auto" :src="item.src" :alt="item.src" />
                 <h6 class="mb-2">
                   <span class="font-bold text-xl text-primary">{{
                     $t(item.title)
@@ -46,7 +46,10 @@
                 <button
                   @click="
                     this.$router.push(
-                      `/services/${item.title.replace(' ', '').toLowerCase()}`
+                      `/services/${item.title
+                        .split('.')[2]
+                        .replace(' ', '')
+                        .toLowerCase()}`
                     )
                   "
                   class="w-[110px] py-2 px-5 border border-solid border-primary rounded-full text-xs font-semibold transition-all duration-500 text-primary hover:bg-primary hover:text-white"
@@ -65,23 +68,26 @@
 <script>
 import ScrollReveal from "scrollreveal";
 import common from "@/utils/common";
+import eventSvg from "@/assets/images/event.svg";
+import mediaSvg from "@/assets/images/media.svg";
+import designSvg from "@/assets/images/design.svg";
 
 export default {
   data() {
     return {
       services: [
         {
-          src: "src/assets/images/event.svg",
+          src: eventSvg,
           title: "services.items.events.title",
           description: "services.items.events.description",
         },
         {
-          src: "src/assets/images/media.svg",
+          src: mediaSvg,
           title: "services.items.media.title",
           description: "services.items.media.description",
         },
         {
-          src: "src/assets/images/design.svg",
+          src: designSvg,
           title: "services.items.design.title",
           description: "services.items.design.description",
         },

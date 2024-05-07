@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template>
-  <section id="about" class="bg-white pt-8 lg:pt-20 text-gray-900">
+  <section id="about" class="bg-white pt-16 text-gray-900">
     <div class="container mx-auto">
       <h2
         class="w-full py-2 text-2xl lg:text-4xl font-medium text-center text-gray-800 uppercase about"
