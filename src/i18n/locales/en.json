@@ -7,8 +7,8 @@
     "home": "Home",
     "about": "About",
     "service": "Services",
-    "client": "Client",
-    "contact": "Contact"
+    "client": "Clients",
+    "contact": "Contact us"
   },
   "about": {
     "header": "About",
@@ -127,11 +127,11 @@
     "readmore": "Read more"
   },
   "client": {
-    "header": "Client",
+    "header": "Clients",
     "description": ""
   },
   "contact": {
-    "header": "Contact",
+    "header": "Contact Us",
     "description": "We are always welcoming talents to join our departments. If you are interested in joining us, please send us an email.",
     "form": {
       "name": "Name (required)",

@@ -48,6 +48,9 @@ import design1 from "@/assets/images/design-1.png";
 import design2 from "@/assets/images/design-2.png";
 import design3 from "@/assets/images/design-3.png";
 import design4 from "@/assets/images/design-4.png";
+import design5 from "@/assets/images/design-5.png";
+import design6 from "@/assets/images/design-6.png";
+import design7 from "@/assets/images/design-7.png";
 
 export default {
   data() {
@@ -57,7 +60,7 @@ export default {
       services: [
         {
           header: "services.items.design.content1.header",
-          src: [design1, design2],
+          src: [design1, design2, design7],
         },
         {
           header: "services.items.design.content2.header",
@@ -65,7 +68,7 @@ export default {
         },
         {
           header: "services.items.design.content3.header",
-          src: [design4],
+          src: [design4, design5, design6],
         },
       ],
     };

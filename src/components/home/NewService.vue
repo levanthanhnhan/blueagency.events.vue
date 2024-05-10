@@ -28,15 +28,17 @@
                   .split('.')[2]
                   .replace(' ', '')
                   .toLowerCase()}`"
-                class="flex flex-wrap flex-col px-6"
+                class="flex flex-wrap flex-col"
               >
-                <img class="h-60 mx-auto" :src="item.src" :alt="item.src" />
-                <h6 class="mb-2">
+                <img class="h-60 mb-6" :src="item.src" :alt="item.src" />
+                <h6 class="mb-2 px-6">
                   <span class="font-bold text-xl text-primary">{{
                     $t(item.title)
                   }}</span>
                 </h6>
-                <small class="pb-6 text-sm">{{ $t(item.description) }}</small>
+                <small class="px-6 pb-6 text-sm">{{
+                  $t(item.description)
+                }}</small>
               </router-link>
             </div>
             <div
@@ -68,26 +70,26 @@
 <script>
 import ScrollReveal from "scrollreveal";
 import common from "@/utils/common";
-import eventSvg from "@/assets/images/event.svg";
-import mediaSvg from "@/assets/images/media.svg";
-import designSvg from "@/assets/images/design.svg";
+import eventThumb from "@/assets/images/events_thumb.jpeg";
+import mediaThumb from "@/assets/images/media_thumb.jpeg";
+import designThumb from "@/assets/images/design_thumb.png";
 
 export default {
   data() {
     return {
       services: [
         {
-          src: eventSvg,
+          src: eventThumb,
           title: "services.items.events.title",
           description: "services.items.events.description",
         },
         {
-          src: mediaSvg,
+          src: mediaThumb,
           title: "services.items.media.title",
           description: "services.items.media.description",
         },
         {
-          src: designSvg,
+          src: designThumb,
           title: "services.items.design.title",
           description: "services.items.design.description",
         },
