@@ -57,15 +57,13 @@ const selected = ref(languages[0]);
             v-slot="{ active, selected }"
           >
             <li
+              @click="switchLanguage(language.name)"
               :class="[
                 active ? 'bg-indigo-600 text-white' : 'text-gray-900',
                 'relative cursor-default select-none py-2 pl-3',
               ]"
             >
-              <div
-                class="flex items-center"
-                @click="switchLanguage(language.name)"
-              >
+              <div class="flex items-center">
                 <flag :iso="language.nationality" />
                 <span
                   :class="[
